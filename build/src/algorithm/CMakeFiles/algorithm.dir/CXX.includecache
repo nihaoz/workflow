@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zyh/workflow-master/src/algorithm/DNSRoutine.cc
+stdio.h
+-
+sys/un.h
+-
+DNSRoutine.h
+/home/zyh/workflow-master/src/algorithm/DNSRoutine.h
+
+/home/zyh/workflow-master/src/algorithm/DNSRoutine.h
+sys/types.h
+-
+sys/socket.h
+-
+netdb.h
+-
+string
+-
+
