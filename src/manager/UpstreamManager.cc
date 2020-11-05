@@ -955,6 +955,7 @@ public:
 		return 1;
 	}
 
+	//结果返回函数
 	int upstream_choose(ParsedURI& uri, UpstreamManager::UpstreamResult& result)
 	{
 		result.cookie = NULL;
@@ -1125,8 +1126,9 @@ int UpstreamManager::upstream_delete(const std::string& name)
 
 int UpstreamManager::choose(ParsedURI& uri, UpstreamResult& result)
 {
+	//流管理器实例化
 	auto *manager = __UpstreamManager::get_instance();
-
+	//通过uri获取返回的结果
 	return manager->upstream_choose(uri, result);
 }
 

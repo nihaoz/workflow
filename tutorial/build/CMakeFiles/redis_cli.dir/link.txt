@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -fPIC -pipe -std=c++11 -fno-exceptions -fdump-rtl-expand -O2 -g -DNDEBUG   CMakeFiles/redis_cli.dir/tutorial-02-redis_cli.cc.o  -o ../redis_cli  -L/home/zyh/workflow-master/_lib -Wl,-rpath,/home/zyh/workflow-master/_lib -lworkflow /usr/lib/x86_64-linux-gnu/librt.so 

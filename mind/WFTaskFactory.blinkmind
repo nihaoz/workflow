@@ -1,0 +1,205 @@
+{
+  "rootTopicKey": "3342cb65-1682-440f-8fa6-5d1579b407d9",
+  "editorRootTopicKey": "3342cb65-1682-440f-8fa6-5d1579b407d9",
+  "focusKey": "b6c407ae-5f2d-4187-a4b6-7499951c65bb",
+  "extData": {
+    "TOPIC_REFERENCE": {
+      "reference": {}
+    }
+  },
+  "topics": [
+    {
+      "key": "a29d93a3-1011-4045-b9e0-19f15207d002",
+      "parentKey": "578e71f3-6c88-4f1b-a521-4bf47d781eb4",
+      "subKeys": [
+        "57b89c7c-2fad-43aa-9dfa-98ffa96aca74"
+      ],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "WFNetworkTask"
+        }
+      ]
+    },
+    {
+      "key": "578e71f3-6c88-4f1b-a521-4bf47d781eb4",
+      "parentKey": "74e41d91-b60f-425e-9aff-c5942e360ad0",
+      "subKeys": [
+        "a29d93a3-1011-4045-b9e0-19f15207d002"
+      ],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "WFClientTask"
+        }
+      ]
+    },
+    {
+      "key": "b6c407ae-5f2d-4187-a4b6-7499951c65bb",
+      "parentKey": "57b89c7c-2fad-43aa-9dfa-98ffa96aca74",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": " CommSession"
+        }
+      ]
+    },
+    {
+      "key": "57b89c7c-2fad-43aa-9dfa-98ffa96aca74",
+      "parentKey": "a29d93a3-1011-4045-b9e0-19f15207d002",
+      "subKeys": [
+        "3bc9e9ad-5abd-4afa-b206-a6d5047c4732",
+        "b6c407ae-5f2d-4187-a4b6-7499951c65bb"
+      ],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "CommRequest"
+        }
+      ]
+    },
+    {
+      "key": "74e41d91-b60f-425e-9aff-c5942e360ad0",
+      "parentKey": "458e0ff1-1dbc-4272-8e9b-e9e571ab7a0e",
+      "subKeys": [
+        "578e71f3-6c88-4f1b-a521-4bf47d781eb4"
+      ],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "WFComplexClientTask"
+        }
+      ]
+    },
+    {
+      "key": "3342cb65-1682-440f-8fa6-5d1579b407d9",
+      "parentKey": null,
+      "subKeys": [
+        "fe409b2e-0ba5-41d3-b7b9-0df5cca9e024"
+      ],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": " WFtaskFactory"
+        }
+      ]
+    },
+    {
+      "key": "3bc9e9ad-5abd-4afa-b206-a6d5047c4732",
+      "parentKey": "57b89c7c-2fad-43aa-9dfa-98ffa96aca74",
+      "subKeys": [],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": " SubTask"
+        }
+      ]
+    },
+    {
+      "key": "fe409b2e-0ba5-41d3-b7b9-0df5cca9e024",
+      "parentKey": "3342cb65-1682-440f-8fa6-5d1579b407d9",
+      "subKeys": [
+        "458e0ff1-1dbc-4272-8e9b-e9e571ab7a0e"
+      ],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "create_http_task"
+        }
+      ]
+    },
+    {
+      "key": "458e0ff1-1dbc-4272-8e9b-e9e571ab7a0e",
+      "parentKey": "fe409b2e-0ba5-41d3-b7b9-0df5cca9e024",
+      "subKeys": [
+        "74e41d91-b60f-425e-9aff-c5942e360ad0"
+      ],
+      "collapse": false,
+      "style": null,
+      "blocks": [
+        {
+          "type": "CONTENT",
+          "data": "ComplexHttpTask"
+        }
+      ]
+    }
+  ],
+  "config": {
+    "readOnly": false,
+    "allowUndo": true,
+    "layoutDir": 2,
+    "theme": {
+      "name": "default",
+      "randomColor": true,
+      "background": "rgb(57,60,65)",
+      "highlightColor": "#50C9CE",
+      "marginH": 60,
+      "marginV": 20,
+      "contentStyle": {
+        "lineHeight": "1.5"
+      },
+      "linkStyle": {
+        "lineRadius": 5,
+        "lineType": "curve",
+        "lineWidth": "3px"
+      },
+      "rootTopic": {
+        "contentStyle": {
+          "fontSize": "34px",
+          "borderRadius": "35px",
+          "padding": "16px 18px 16px 18px"
+        },
+        "subLinkStyle": {
+          "lineType": "curve",
+          "lineWidth": "3px",
+          "lineColor": "rgb(113, 203, 45)"
+        }
+      },
+      "primaryTopic": {
+        "contentStyle": {
+          "borderWidth": "1px",
+          "borderStyle": "solid",
+          "borderRadius": "20px",
+          "fontSize": "17px",
+          "padding": "10px 15px 10px 15px"
+        },
+        "subLinkStyle": {
+          "lineType": "curve",
+          "lineWidth": "3px",
+          "lineColor": "rgb(113, 203, 45)"
+        }
+      },
+      "normalTopic": {
+        "contentStyle": {
+          "border": "1px solid #e8eaec",
+          "borderRadius": "20px",
+          "fontSize": "17px",
+          "padding": "4px 10px"
+        },
+        "subLinkStyle": {
+          "lineType": "curve",
+          "lineWidth": "3px",
+          "lineColor": "white"
+        }
+      }
+    }
+  },
+  "formatVersion": null
+}
