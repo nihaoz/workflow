@@ -332,9 +332,9 @@ try_optimize_cfg iteration 2
         (reg:DI 110)) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34 -1
      (nil))
 (call_insn 41 40 42 6 (set (reg:DI 0 ax)
-        (call (mem:QI (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7f2a7ffaad00 __builtin_memcpy>) [0 __builtin_memcpy S1 A8])
+        (call (mem:QI (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7fb30f26bd00 __builtin_memcpy>) [0 __builtin_memcpy S1 A8])
             (const_int 0 [0]))) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7f2a7ffaad00 __builtin_memcpy>)
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7fb30f26bd00 __builtin_memcpy>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:DI (set (reg:DI 0 ax)
@@ -526,9 +526,9 @@ try_optimize_cfg iteration 2
  -> 96)
 (note 90 89 91 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
 (call_insn/u 91 90 92 12 (set (reg:DI 0 ax)
-        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x7f2a7f8cae00 __errno_location>) [0 __errno_location S1 A8])
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x7fb30eb8be00 __errno_location>) [0 __errno_location S1 A8])
             (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":66 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x7f2a7f8cae00 __errno_location>)
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x7fb30eb8be00 __errno_location>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -552,9 +552,9 @@ try_optimize_cfg iteration 2
         (reg:DI 102 [ prephitmp_42 ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":70 -1
      (nil))
 (call_insn 99 98 100 13 (set (reg:DI 0 ax)
-        (call (mem:QI (symbol_ref:DI ("malloc") [flags 0x41]  <function_decl 0x7f2a7ffdc000 malloc>) [0 __builtin_malloc S1 A8])
+        (call (mem:QI (symbol_ref:DI ("malloc") [flags 0x41]  <function_decl 0x7fb30f29d000 malloc>) [0 __builtin_malloc S1 A8])
             (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":70 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:DI ("malloc") [flags 0x41]  <function_decl 0x7f2a7ffdc000 malloc>)
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("malloc") [flags 0x41]  <function_decl 0x7fb30f29d000 malloc>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:DI (use (reg:DI 5 di))
@@ -617,9 +617,9 @@ try_optimize_cfg iteration 2
  -> 121)
 (note 115 114 116 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
 (call_insn/u 116 115 117 16 (set (reg:DI 0 ax)
-        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x7f2a7f8cae00 __errno_location>) [0 __errno_location S1 A8])
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x7fb30eb8be00 __errno_location>) [0 __errno_location S1 A8])
             (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":81 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x7f2a7f8cae00 __errno_location>)
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x7fb30eb8be00 __errno_location>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (nil))
@@ -669,9 +669,9 @@ try_optimize_cfg iteration 2
         (reg:DI 126)) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34 -1
      (nil))
 (call_insn 133 132 134 17 (set (reg:DI 0 ax)
-        (call (mem:QI (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7f2a7ffaad00 __builtin_memcpy>) [0 __builtin_memcpy S1 A8])
+        (call (mem:QI (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7fb30f26bd00 __builtin_memcpy>) [0 __builtin_memcpy S1 A8])
             (const_int 0 [0]))) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7f2a7ffaad00 __builtin_memcpy>)
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7fb30f26bd00 __builtin_memcpy>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:DI (set (reg:DI 0 ax)
@@ -758,9 +758,9 @@ try_optimize_cfg iteration 2
 (insn 7 6 8 2 (set (reg:DI 5 di)
         (reg:DI 89)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":63 -1
      (nil))
-(call_insn/j 8 7 9 2 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7f2a7ffd5000 free>) [0 __builtin_free S1 A8])
+(call_insn/j 8 7 9 2 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7fb30f296000 free>) [0 __builtin_free S1 A8])
         (const_int 0 [0])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":63 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7f2a7ffd5000 free>)
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7fb30f296000 free>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:DI (use (reg:DI 5 di))
@@ -803,9 +803,9 @@ try_optimize_cfg iteration 2
 (insn 8 7 9 2 (set (reg:DI 5 di)
         (reg:DI 89)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":63 -1
      (nil))
-(call_insn 9 8 10 2 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7f2a7ffd5000 free>) [0 __builtin_free S1 A8])
+(call_insn 9 8 10 2 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7fb30f296000 free>) [0 __builtin_free S1 A8])
         (const_int 0 [0])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":63 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7f2a7ffd5000 free>)
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7fb30f296000 free>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:DI (use (reg:DI 5 di))
@@ -834,9 +834,9 @@ try_optimize_cfg iteration 2
 (insn 20 19 21 2 (set (reg:DI 5 di)
         (reg/f:DI 88 [ this ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":64 -1
      (nil))
-(call_insn/j 21 20 22 2 (call (mem:QI (symbol_ref:DI ("_ZdlPv") [flags 0x41]  <function_decl 0x7f2a80046f00 operator delete>) [0 operator delete S1 A8])
+(call_insn/j 21 20 22 2 (call (mem:QI (symbol_ref:DI ("_ZdlPv") [flags 0x41]  <function_decl 0x7fb30f307f00 operator delete>) [0 operator delete S1 A8])
         (const_int 0 [0])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":64 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:DI ("_ZdlPv") [flags 0x41]  <function_decl 0x7f2a80046f00 operator delete>)
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("_ZdlPv") [flags 0x41]  <function_decl 0x7fb30f307f00 operator delete>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:DI (use (reg:DI 5 di))
@@ -884,9 +884,9 @@ try_optimize_cfg iteration 2
 (insn 10 9 11 2 (set (reg:DI 5 di)
         (reg:DI 89)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":63 -1
      (nil))
-(call_insn/j 11 10 12 2 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7f2a7ffd5000 free>) [0 __builtin_free S1 A8])
+(call_insn/j 11 10 12 2 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7fb30f296000 free>) [0 __builtin_free S1 A8])
         (const_int 0 [0])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":63 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7f2a7ffd5000 free>)
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7fb30f296000 free>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:DI (use (reg:DI 5 di))
@@ -936,9 +936,9 @@ try_optimize_cfg iteration 2
 (insn 10 9 11 2 (set (reg:DI 5 di)
         (reg:DI 90)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":63 -1
      (nil))
-(call_insn 11 10 12 2 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7f2a7ffd5000 free>) [0 __builtin_free S1 A8])
+(call_insn 11 10 12 2 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7fb30f296000 free>) [0 __builtin_free S1 A8])
         (const_int 0 [0])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":63 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7f2a7ffd5000 free>)
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7fb30f296000 free>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:DI (use (reg:DI 5 di))
@@ -975,9 +975,9 @@ try_optimize_cfg iteration 2
 (insn 23 22 24 2 (set (reg:DI 5 di)
         (reg:DI 91 [ this ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":64 -1
      (nil))
-(call_insn/j 24 23 25 2 (call (mem:QI (symbol_ref:DI ("_ZdlPv") [flags 0x41]  <function_decl 0x7f2a80046f00 operator delete>) [0 operator delete S1 A8])
+(call_insn/j 24 23 25 2 (call (mem:QI (symbol_ref:DI ("_ZdlPv") [flags 0x41]  <function_decl 0x7fb30f307f00 operator delete>) [0 operator delete S1 A8])
         (const_int 0 [0])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":64 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:DI ("_ZdlPv") [flags 0x41]  <function_decl 0x7f2a80046f00 operator delete>)
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("_ZdlPv") [flags 0x41]  <function_decl 0x7fb30f307f00 operator delete>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:DI (use (reg:DI 5 di))
@@ -1106,9 +1106,9 @@ try_optimize_cfg iteration 2
         (reg/v:DI 92 [ size ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":94 -1
      (nil))
 (call_insn 11 10 12 2 (set (reg:DI 0 ax)
-        (call (mem:QI (symbol_ref:DI ("malloc") [flags 0x41]  <function_decl 0x7f2a7ffdc000 malloc>) [0 __builtin_malloc S1 A8])
+        (call (mem:QI (symbol_ref:DI ("malloc") [flags 0x41]  <function_decl 0x7fb30f29d000 malloc>) [0 __builtin_malloc S1 A8])
             (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":94 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:DI ("malloc") [flags 0x41]  <function_decl 0x7f2a7ffdc000 malloc>)
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("malloc") [flags 0x41]  <function_decl 0x7fb30f29d000 malloc>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:DI (use (reg:DI 5 di))
@@ -1159,9 +1159,9 @@ try_optimize_cfg iteration 2
         (reg:DI 94)) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34 -1
      (nil))
 (call_insn 27 26 28 4 (set (reg:DI 0 ax)
-        (call (mem:QI (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7f2a7ffaad00 __builtin_memcpy>) [0 __builtin_memcpy S1 A8])
+        (call (mem:QI (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7fb30f26bd00 __builtin_memcpy>) [0 __builtin_memcpy S1 A8])
             (const_int 0 [0]))) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7f2a7ffaad00 __builtin_memcpy>)
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7fb30f26bd00 __builtin_memcpy>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:DI (set (reg:DI 0 ax)
@@ -1189,9 +1189,9 @@ try_optimize_cfg iteration 2
 (insn 34 33 35 4 (set (reg:DI 5 di)
         (reg:DI 99)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":100 -1
      (nil))
-(call_insn 35 34 36 4 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7f2a7ffd5000 free>) [0 __builtin_free S1 A8])
+(call_insn 35 34 36 4 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7fb30f296000 free>) [0 __builtin_free S1 A8])
         (const_int 0 [0])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":100 -1
-     (expr_list:REG_CALL_DECL (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7f2a7ffd5000 free>)
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7fb30f296000 free>)
         (expr_list:REG_EH_REGION (const_int 0 [0])
             (nil)))
     (expr_list:DI (use (reg:DI 5 di))
@@ -1293,13 +1293,13 @@ try_optimize_cfg iteration 2
      (nil))
 (insn 18 17 19 2 (set (reg:DI 98)
         (mem/u/c:DI (const:DI (unspec:DI [
-                        (symbol_ref/i:DI ("_ZTVN8protocol15TutorialMessageE")  <var_decl 0x7f2a7eeadd80 _ZTVN8protocol15TutorialMessageE>)
+                        (symbol_ref/i:DI ("_ZTVN8protocol15TutorialMessageE")  <var_decl 0x7fb30e16ed80 _ZTVN8protocol15TutorialMessageE>)
                     ] UNSPEC_GOTPCREL)) [11  S8 A8])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":109 -1
      (nil))
 (insn 19 18 20 2 (set (reg/f:DI 97)
         (plus:DI (reg:DI 98)
             (const_int 16 [0x10]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":109 -1
-     (expr_list:REG_EQUAL (const:DI (plus:DI (symbol_ref/i:DI ("_ZTVN8protocol15TutorialMessageE")  <var_decl 0x7f2a7eeadd80 _ZTVN8protocol15TutorialMessageE>)
+     (expr_list:REG_EQUAL (const:DI (plus:DI (symbol_ref/i:DI ("_ZTVN8protocol15TutorialMessageE")  <var_decl 0x7fb30e16ed80 _ZTVN8protocol15TutorialMessageE>)
                 (const_int 16 [0x10])))
         (nil)))
 (insn 20 19 21 2 (set (mem/f/j:DI (reg/f:DI 94 [ this ]) [0 this_10(D)->D.21767.D.21606._vptr.CommMessageOut+0 S8 A64])
@@ -1307,13 +1307,13 @@ try_optimize_cfg iteration 2
      (nil))
 (insn 21 20 22 2 (set (reg:DI 100)
         (mem/u/c:DI (const:DI (unspec:DI [
-                        (symbol_ref/i:DI ("_ZTVN8protocol15TutorialMessageE")  <var_decl 0x7f2a7eeadd80 _ZTVN8protocol15TutorialMessageE>)
+                        (symbol_ref/i:DI ("_ZTVN8protocol15TutorialMessageE")  <var_decl 0x7fb30e16ed80 _ZTVN8protocol15TutorialMessageE>)
                     ] UNSPEC_GOTPCREL)) [11  S8 A8])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":109 -1
      (nil))
 (insn 22 21 23 2 (set (reg/f:DI 99)
         (plus:DI (reg:DI 100)
             (const_int 72 [0x48]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":109 -1
-     (expr_list:REG_EQUAL (const:DI (plus:DI (symbol_ref/i:DI ("_ZTVN8protocol15TutorialMessageE")  <var_decl 0x7f2a7eeadd80 _ZTVN8protocol15TutorialMessageE>)
+     (expr_list:REG_EQUAL (const:DI (plus:DI (symbol_ref/i:DI ("_ZTVN8protocol15TutorialMessageE")  <var_decl 0x7fb30e16ed80 _ZTVN8protocol15TutorialMessageE>)
                 (const_int 72 [0x48])))
         (nil)))
 (insn 23 22 24 2 (set (mem/f/j:DI (plus:DI (reg/f:DI 94 [ this ])
