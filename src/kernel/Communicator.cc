@@ -1328,6 +1328,11 @@ int Communicator::create_handler_threads(size_t handler_threads)
 	return -1;
 }
 
+/**
+ * @description: 创建轮询器线程
+ * @param {poller_threads}
+ * @return {int}
+ */
 int Communicator::create_poller(size_t poller_threads)
 {
 	struct poller_params params = {
@@ -1355,7 +1360,7 @@ int Communicator::create_poller(size_t poller_threads)
 
 	return -1;
 }
-
+//调度表初始化
 int Communicator::init(size_t poller_threads, size_t handler_threads)
 {
 	if (poller_threads == 0 || handler_threads == 0)
@@ -1364,6 +1369,7 @@ int Communicator::init(size_t poller_threads, size_t handler_threads)
 		return -1;
 	}
 
+	//建立轮询器
 	if (this->create_poller(poller_threads) >= 0)
 	{
 		if (this->create_handler_threads(handler_threads) >= 0)
@@ -1371,7 +1377,7 @@ int Communicator::init(size_t poller_threads, size_t handler_threads)
 			this->stop_flag = 0;
 			return 0;
 		}
-
+		//如果轮询器或者处理器线程没创建完成则销毁。
 		mpoller_stop(this->mpoller);
 		mpoller_destroy(this->mpoller);
 		msgqueue_destroy(this->queue);

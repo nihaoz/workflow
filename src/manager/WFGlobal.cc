@@ -1,4 +1,12 @@
 /*
+ * @Author: TICA:zyh
+ * @Date: 2020-10-30 15:39:22
+ * @LastEditor: TICA:zyh
+ * @LastEditTime: 2020-11-11 21:04:03
+ * @FilePath: /workflow-master/src/manager/WFGlobal.cc
+ * @Email: 369023466@qq.com
+ */
+/*
   Copyright (c) 2019 Sogou, Inc.
 
   Licensed under the Apache License, Version 2.0 (the "License");
@@ -341,7 +349,9 @@ private:
 #ifdef SIGPIPE
 		signal(SIGPIPE, SIG_IGN);
 #endif
+		//获取线程的全局表的参数，并初始化，默认是轮询线程4,处理线程20,进入看看参数
 		const auto *settings = __WFGlobal::get_instance()->get_global_settings();
+		//程序调度初始化默认poller_threads = 4; handler_threads = 20
 		int ret = scheduler_.init(settings->poller_threads,
 								  settings->handler_threads);
 
@@ -497,6 +507,7 @@ private:
 
 CommScheduler *WFGlobal::get_scheduler()
 {
+	//获取调度表，创建单例类__CommManager,看一下构造函数
 	return __CommManager::get_instance()->get_scheduler();
 }
 

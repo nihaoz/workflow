@@ -209,6 +209,7 @@ protected:
 	using task_callback_t = std::function<void (WFNetworkTask<REQ, RESP> *)>;
 
 public:
+	//这里调用了get_schedulerc程序表，这个位置创建了基本的线程表
 	WFComplexClientTask(int retry_max, task_callback_t&& callback):
 		WFClientTask<REQ, RESP>(NULL, WFGlobal::get_scheduler(),
 								std::move(callback)),
