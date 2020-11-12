@@ -101,7 +101,7 @@ static inline int __poller_add_fd(int fd, int event, void *data,
 	struct epoll_event ev = {
 		.events		=	event,
 		.data		=	{
-			.ptr	=	data
+			.ptr	=	data//此处作用保留作为后面代码思考
 		}
 	};
 	return epoll_ctl(poller->pfd, EPOLL_CTL_ADD, fd, &ev);
@@ -950,7 +950,9 @@ static void *__poller_thread_routine(void *arg)
 
 	while (1)
 	{
+		//设置定时器
 		__poller_set_timer(poller);
+		//这里等待epoll事件触发，如果触发以后，将数据events还有触发数量nevents返回
 		nevents = __poller_wait(events, POLLER_EVENTS_MAX, poller);
 		clock_gettime(CLOCK_MONOTONIC, &time_node.timeout);
 		has_pipe_event = 0;
@@ -1019,6 +1021,7 @@ static int __poller_open_pipe(poller_t *poller)
 
 	if (pipe(pipefd) >= 0)
 	{
+		//设置epoll监听pip管道数据事件
 		if (__poller_add_fd(pipefd[0], EPOLLIN, (void *)1, poller) >= 0)
 		{
 			poller->pipe_rd = pipefd[0];
@@ -1136,6 +1139,7 @@ int poller_start(poller_t *poller)
 		ret = pthread_create(&tid, NULL, __poller_thread_routine, poller);
 		if (ret == 0)
 		{
+			//设置轮询器的线程id到对应的轮询器
 			poller->tid = tid;
 			poller->nodes[poller->pipe_rd] = POLLER_NODE_ERROR;
 			poller->nodes[poller->pipe_wr] = POLLER_NODE_ERROR;
