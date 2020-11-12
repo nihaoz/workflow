@@ -67,13 +67,13 @@ struct __poller_node
 
 struct __poller
 {
-	size_t max_open_files;
+	size_t max_open_files;//最大打开文件数
 	poller_message_t *(*create_message)(void *);
 	int (*partial_written)(size_t, void *);
 	void (*cb)(struct poller_result *, void *);
 	void *ctx;
 
-	pthread_t tid;
+	pthread_t tid;//线程id
 	int pfd;
 	int timerfd;
 	int pipe_rd;
@@ -127,6 +127,7 @@ static inline int __poller_mod_fd(int fd, int old_event,
 
 static inline int __poller_create_timerfd()
 {
+	//定时器模式
 	return timerfd_create(CLOCK_MONOTONIC, 0);
 }
 
@@ -1034,6 +1035,7 @@ static int __poller_open_pipe(poller_t *poller)
 
 static int __poller_create_timer(poller_t *poller)
 {
+	//创建一个定时器
 	int timerfd = __poller_create_timerfd();
 
 	if (timerfd >= 0)
@@ -1066,14 +1068,17 @@ poller_t *poller_create(const struct poller_params *params)
 	poller->nodes = (struct __poller_node **)calloc(n, sizeof (void *));
 	if (poller->nodes)
 	{
+		//epoll创建一个大小的监听事件，也就是说一个线程监听一个文件fd
 		poller->pfd = __poller_create_pfd();
 		if (poller->pfd >= 0)
 		{
+			//创建定时器
 			if (__poller_create_timer(poller) >= 0)
 			{
 				ret = pthread_mutex_init(&poller->mutex, NULL);
 				if (ret == 0)
 				{
+					//赋值操作，轮询器参数初始化
 					poller->max_open_files = n;
 					poller->create_message = params->create_message;
 					poller->partial_written = params->partial_written;
@@ -1082,6 +1087,7 @@ poller_t *poller_create(const struct poller_params *params)
 
 					poller->timeo_tree.rb_node = NULL;
 					poller->tree_first = NULL;
+					//这里创建两个list分别管理有超时的事件与没有超时的时间
 					INIT_LIST_HEAD(&poller->timeo_list);
 					INIT_LIST_HEAD(&poller->no_timeo_list);
 					poller->nodes[poller->timerfd] = POLLER_NODE_ERROR;
@@ -1113,6 +1119,11 @@ void poller_destroy(poller_t *poller)
 	free(poller);
 }
 
+/**
+ * @description: 轮询器启动函数
+ * @param {*}
+ * @return {*}
+ */
 int poller_start(poller_t *poller)
 {
 	pthread_t tid;
@@ -1121,6 +1132,7 @@ int poller_start(poller_t *poller)
 	pthread_mutex_lock(&poller->mutex);
 	if (__poller_open_pipe(poller) >= 0)
 	{
+		//这里创建轮询器线程，运行函数__poller_thread_routine,参数poller
 		ret = pthread_create(&tid, NULL, __poller_thread_routine, poller);
 		if (ret == 0)
 		{

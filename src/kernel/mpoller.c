@@ -21,11 +21,17 @@
 #include "poller.h"
 #include "mpoller.h"
 
+/**
+ * @description: 创建满足线程数的轮询器
+ * @param {*}
+ * @return {*}
+ */
 static int __mpoller_create(const struct poller_params *params,
 							mpoller_t *mpoller)
 {
 	unsigned int i;
 
+	//创建每一个线程对应的轮询器，去轮询事件
 	for (i = 0; i < mpoller->nthreads; i++)
 	{
 		mpoller->poller[i] = poller_create(params);

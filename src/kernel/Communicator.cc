@@ -1350,6 +1350,7 @@ int Communicator::create_poller(size_t poller_threads)
 		this->mpoller = mpoller_create(&params, poller_threads);
 		if (this->mpoller)
 		{
+			//启动轮询器
 			if (mpoller_start(this->mpoller) >= 0)
 				return 0;
 
