@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/wget.dir/tutorial-01-wget.cc.o"
-  "../wget.pdb"
   "../wget"
+  "../wget.pdb"
+  "CMakeFiles/wget.dir/tutorial-01-wget.cc.o"
 )
 
 # Per-language clean rules from dependency scanning.

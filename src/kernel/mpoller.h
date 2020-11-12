@@ -1,4 +1,12 @@
 /*
+ * @Author: TICA:zyh
+ * @Date: 2020-11-10 16:31:23
+ * @LastEditors: TICA:zyh
+ * @LastEditTime: 2020-11-12 00:15:07
+ * @FilePath: /workflow-master/src/kernel/mpoller.h
+ * @Email: 369023466@qq.com
+ */
+/*
   Copyright (c) 2019 Sogou, Inc.
 
   Licensed under the Apache License, Version 2.0 (the "License");
@@ -41,8 +49,8 @@ void mpoller_destroy(mpoller_t *mpoller);
 
 struct __mpoller
 {
-	unsigned int nthreads;
-	poller_t *poller[1];
+	unsigned int nthreads;//轮询器线程数量
+	poller_t *poller[1]; //指针数组，指向一行
 };
 
 static inline int mpoller_add(const struct poller_data *data, int timeout,

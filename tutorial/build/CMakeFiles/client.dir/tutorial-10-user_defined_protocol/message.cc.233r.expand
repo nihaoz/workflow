@@ -1,0 +1,1767 @@
+
+;; Function protocol::ProtocolMessage::append (_ZN8protocol15ProtocolMessage6appendEPKvPm, funcdef_no=966, decl_uid=21677, cgraph_uid=967, symbol_order=966)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (reg/f:DI 86 [ this ])
+        (reg:DI 5 di [ this ])) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":47:14 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:DI 87 [ buf ])
+        (reg:DI 4 si [ buf ])) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":47:14 -1
+     (nil))
+(insn 4 3 5 2 (set (reg/v/f:DI 88 [ size ])
+        (reg:DI 1 dx [ size ])) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":47:14 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 8 5 9 2 (debug_marker) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":49:3 -1
+     (nil))
+(insn 9 8 10 2 (set (reg/f:DI 89)
+        (mem/f:DI (reg/f:DI 86 [ this ]) [8 this_5(D)->D.21707._vptr.CommMessageOut+0 S8 A64])) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":49:33 -1
+     (nil))
+(insn 10 9 11 2 (set (reg/f:DI 90)
+        (mem/f:DI (plus:DI (reg/f:DI 89)
+                (const_int 32 [0x20])) [9 MEM[(int (*) () *)_1 + 32B]+0 S8 A64])) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":49:22 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 1 dx)
+        (mem:DI (reg/v/f:DI 88 [ size ]) [3 *size_6(D)+0 S8 A64])) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":49:22 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:DI 4 si)
+        (reg/v/f:DI 87 [ buf ])) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":49:22 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:DI 5 di)
+        (reg/f:DI 86 [ this ])) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":49:22 -1
+     (nil))
+(call_insn/j 14 13 15 2 (set (reg:SI 0 ax)
+        (call (mem:QI (reg/f:DI 90) [0 *OBJ_TYPE_REF(_2;(struct ProtocolMessage)this_5(D)->4) S1 A8])
+            (const_int 0 [0]))) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":49:22 -1
+     (expr_list:REG_CALL_DECL (nil)
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(barrier 15 14 0)
+
+;; Function protocol::TutorialMessage::encode (_ZN8protocol15TutorialMessage6encodeEP5ioveci, funcdef_no=991, decl_uid=21803, cgraph_uid=1002, symbol_order=1001)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 42.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (reg/f:DI 89 [ this ])
+        (reg:DI 5 di [ this ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":30:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:DI 90 [ vectors ])
+        (reg:DI 4 si [ vectors ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":30:1 -1
+     (nil))
+(insn 4 3 5 2 (set (reg/v:SI 91 [ max ])
+        (reg:SI 1 dx [ max ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":30:1 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 8 5 9 2 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":31:2 -1
+     (nil))
+(debug_insn 9 8 10 2 (var_location:SI __bsx (mem:SI (plus:DI (reg/f:DI 89 [ this ])
+            (const_int 72 [0x48])) [3 this_7(D)->body_size+0 S4 A64])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":31:15 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker:BLK) "/usr/include/x86_64-linux-gnu/bits/byteswap.h":49:1 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "/usr/include/x86_64-linux-gnu/bits/byteswap.h":52:3 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:DI 92)
+        (mem:DI (plus:DI (reg/f:DI 89 [ this ])
+                (const_int 72 [0x48])) [3 this_7(D)->body_size+0 S8 A64])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":31:15 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 93)
+        (subreg:SI (reg:DI 92) 0)) "/usr/include/x86_64-linux-gnu/bits/byteswap.h":52:28 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 87 [ _16 ])
+        (bswap:SI (reg:SI 93))) "/usr/include/x86_64-linux-gnu/bits/byteswap.h":52:28 -1
+     (expr_list:REG_EQUAL (bswap:SI (subreg:SI (reg:DI 92) 0))
+        (nil)))
+(debug_insn 15 14 16 2 (var_location:SI __bsx (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":31:15 -1
+     (nil))
+(debug_insn 16 15 17 2 (var_location:SI n (reg:SI 87 [ _16 ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":31:15 -1
+     (nil))
+(debug_insn 17 16 18 2 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":33:2 -1
+     (nil))
+(debug_insn 18 17 19 2 (var_location:DI __dest (plus:DI (reg/f:DI 89 [ this ])
+        (const_int 40 [0x28]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":33:15 -1
+     (nil))
+(debug_insn 19 18 20 2 (var_location:DI __src (debug_implicit_ptr:DI n)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":33:15 -1
+     (nil))
+(debug_insn 20 19 21 2 (var_location:DI __len (const_int 4 [0x4])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":33:15 -1
+     (nil))
+(debug_insn 21 20 22 2 (debug_marker:BLK) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":31:1 -1
+     (nil))
+(debug_insn 22 21 23 2 (debug_marker) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:3 -1
+     (nil))
+(insn 23 22 24 2 (set (mem:SI (plus:DI (reg/f:DI 89 [ this ])
+                (const_int 40 [0x28])) [0 MEM[(char * {ref-all})this_7(D) + 40B]+0 S4 A8])
+        (reg:SI 87 [ _16 ])) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(debug_insn 24 23 25 2 (var_location:DI __dest (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":33:8 -1
+     (nil))
+(debug_insn 25 24 26 2 (var_location:DI __src (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":33:8 -1
+     (nil))
+(debug_insn 26 25 27 2 (var_location:DI __len (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":33:8 -1
+     (nil))
+(debug_insn 27 26 28 2 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":34:2 -1
+     (nil))
+(insn 28 27 29 2 (parallel [
+            (set (reg:DI 94)
+                (plus:DI (reg/f:DI 89 [ this ])
+                    (const_int 40 [0x28])))
+            (clobber (reg:CC 17 flags))
+        ]) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":33:15 -1
+     (nil))
+(insn 29 28 30 2 (set (mem/f:DI (reg/v/f:DI 90 [ vectors ]) [5 vectors_10(D)->iov_base+0 S8 A64])
+        (reg:DI 94)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":33:15 -1
+     (nil))
+(debug_insn 30 29 31 2 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":35:2 -1
+     (nil))
+(insn 31 30 32 2 (set (mem:DI (plus:DI (reg/v/f:DI 90 [ vectors ])
+                (const_int 8 [0x8])) [3 vectors_10(D)->iov_len+0 S8 A64])
+        (const_int 4 [0x4])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":35:21 -1
+     (nil))
+(debug_insn 32 31 33 2 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":36:2 -1
+     (nil))
+(insn 33 32 34 2 (set (reg/f:DI 85 [ _4 ])
+        (mem/f:DI (plus:DI (reg/f:DI 89 [ this ])
+                (const_int 56 [0x38])) [4 this_7(D)->body+0 S8 A64])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":36:30 -1
+     (nil))
+(insn 34 33 35 2 (set (mem/f:DI (plus:DI (reg/v/f:DI 90 [ vectors ])
+                (const_int 16 [0x10])) [5 MEM[(struct iovec *)vectors_10(D) + 16B].iov_base+0 S8 A64])
+        (reg/f:DI 85 [ _4 ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":36:22 -1
+     (nil))
+(debug_insn 35 34 36 2 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":37:2 -1
+     (nil))
+(insn 36 35 37 2 (set (reg:DI 86 [ _5 ])
+        (mem:DI (plus:DI (reg/f:DI 89 [ this ])
+                (const_int 72 [0x48])) [3 this_7(D)->body_size+0 S8 A64])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":37:29 -1
+     (nil))
+(insn 37 36 38 2 (set (mem:DI (plus:DI (reg/v/f:DI 90 [ vectors ])
+                (const_int 24 [0x18])) [3 MEM[(struct iovec *)vectors_10(D) + 16B].iov_len+0 S8 A64])
+        (reg:DI 86 [ _5 ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":37:21 -1
+     (nil))
+(debug_insn 38 37 39 2 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":39:2 -1
+     (nil))
+(debug_insn 39 38 40 2 (var_location:SI D#8 (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 40 39 41 2 (var_location:SI n (debug_expr:SI D#8)) -1
+     (nil))
+(insn 41 40 45 2 (set (reg:SI 88 [ <retval> ])
+        (const_int 2 [0x2])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":39:9 -1
+     (nil))
+(insn 45 41 46 2 (set (reg/i:SI 0 ax)
+        (reg:SI 88 [ <retval> ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":40:1 -1
+     (nil))
+(insn 46 45 0 2 (use (reg/i:SI 0 ax)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":40:1 -1
+     (nil))
+
+;; Function protocol::TutorialMessage::append (_ZN8protocol15TutorialMessage6appendEPKvm, funcdef_no=992, decl_uid=21807, cgraph_uid=1003, symbol_order=1002)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+Selected stringop expansion strategy: libcall
+
+;; Generating RTL for gimple basic block 6
+Selected stringop expansion strategy: byte_loop
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+Selected stringop expansion strategy: libcall
+
+;; Generating RTL for gimple basic block 13
+Edge 8->13 redirected to 16
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 60 from 19 to 20.
+Redirecting jump 117 from 19 to 20.
+Redirecting jump 154 from 19 to 20.
+Redirecting jump 190 from 19 to 20.
+Merging block 19 into block 18...
+Merged blocks 18 and 19.
+Merged 18 and 19 without moving.
+Removing jump 184.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 10 NOTE_INSN_DELETED)
+(note 10 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 10 3 2 (set (reg/f:DI 101 [ this ])
+        (reg:DI 5 di [ this ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":43:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:DI 102 [ buf ])
+        (reg:DI 4 si [ buf ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":43:1 -1
+     (nil))
+(insn 4 3 5 2 (set (reg/v:DI 103 [ size ])
+        (reg:DI 1 dx [ size ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":43:1 -1
+     (nil))
+(note 5 4 12 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 12 5 13 2 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":44:2 -1
+     (nil))
+(insn 13 12 16 2 (set (reg:DI 82 [ _1 ])
+        (mem:DI (plus:DI (reg/f:DI 101 [ this ])
+                (const_int 48 [0x30])) [3 this_19(D)->head_received+0 S8 A64])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":44:12 -1
+     (nil))
+(insn 16 13 17 2 (set (reg:CC 17 flags)
+        (compare:CC (reg:DI 82 [ _1 ])
+            (const_int 3 [0x3]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":44:2 -1
+     (nil))
+(jump_insn 17 16 18 2 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 23)
+            (pc))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":44:2 -1
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 23)
+(note 18 17 19 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 19 18 20 4 (set (reg:DI 104)
+        (mem:DI (plus:DI (reg/f:DI 101 [ this ])
+                (const_int 72 [0x48])) [3 this_19(D)->body_size+0 S8 A64])) -1
+     (nil))
+(insn 20 19 21 4 (parallel [
+            (set (reg:DI 99 [ prephitmp_50 ])
+                (minus:DI (reg:DI 104)
+                    (mem:DI (plus:DI (reg/f:DI 101 [ this ])
+                            (const_int 64 [0x40])) [3 this_19(D)->body_received+0 S8 A64])))
+            (clobber (reg:CC 17 flags))
+        ]) -1
+     (expr_list:REG_EQUAL (minus:DI (mem:DI (plus:DI (reg/f:DI 101 [ this ])
+                    (const_int 72 [0x48])) [3 this_19(D)->body_size+0 S8 A64])
+            (mem:DI (plus:DI (reg/f:DI 101 [ this ])
+                    (const_int 64 [0x40])) [3 this_19(D)->body_received+0 S8 A64]))
+        (nil)))
+(jump_insn 21 20 22 4 (set (pc)
+        (label_ref 136)) -1
+     (nil)
+ -> 136)
+(barrier 22 21 23)
+(code_label 23 22 24 5 5 (nil) [1 uses])
+(note 24 23 25 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 25 24 26 5 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":46:3 -1
+     (nil))
+(debug_insn 26 25 27 5 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":47:3 -1
+     (nil))
+(debug_insn 27 26 28 5 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":49:3 -1
+     (nil))
+(insn 28 27 29 5 (parallel [
+            (set (reg:DI 105)
+                (plus:DI (reg:DI 82 [ _1 ])
+                    (const_int 40 [0x28])))
+            (clobber (reg:CC 17 flags))
+        ]) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":49:5 -1
+     (nil))
+(insn 29 28 30 5 (parallel [
+            (set (reg/v/f:DI 91 [ p ])
+                (plus:DI (reg/f:DI 101 [ this ])
+                    (reg:DI 105)))
+            (clobber (reg:CC 17 flags))
+        ]) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":49:5 -1
+     (nil))
+(debug_insn 30 29 31 5 (var_location:DI p (reg/v/f:DI 91 [ p ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":49:5 -1
+     (nil))
+(debug_insn 31 30 32 5 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":50:3 -1
+     (nil))
+(insn 32 31 33 5 (set (reg:DI 106)
+        (const_int 4 [0x4])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":50:13 -1
+     (nil))
+(insn 33 32 34 5 (parallel [
+            (set (reg/v:DI 92 [ head_left ])
+                (minus:DI (reg:DI 106)
+                    (reg:DI 82 [ _1 ])))
+            (clobber (reg:CC 17 flags))
+        ]) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":50:13 -1
+     (nil))
+(debug_insn 34 33 35 5 (var_location:DI head_left (reg/v:DI 92 [ head_left ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":50:13 -1
+     (nil))
+(debug_insn 35 34 36 5 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":51:3 -1
+     (nil))
+(insn 36 35 37 5 (set (reg:CC 17 flags)
+        (compare:CC (reg/v:DI 103 [ size ])
+            (reg/v:DI 92 [ head_left ]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":51:3 -1
+     (nil))
+(jump_insn 37 36 38 5 (set (pc)
+        (if_then_else (geu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 62)
+            (pc))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":51:3 -1
+     (int_list:REG_BR_PROB 708669604 (nil))
+ -> 62)
+(note 38 37 39 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 39 38 40 6 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":53:4 -1
+     (nil))
+(debug_insn 40 39 41 6 (var_location:DI __dest (reg/v/f:DI 91 [ p ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":53:4 -1
+     (nil))
+(debug_insn 41 40 42 6 (var_location:DI __src (reg/v/f:DI 102 [ buf ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":53:4 -1
+     (nil))
+(debug_insn 42 41 43 6 (var_location:DI __len (reg/v:DI 103 [ size ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":53:4 -1
+     (nil))
+(debug_insn 43 42 44 6 (debug_marker:BLK) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":31:1 -1
+     (nil))
+(debug_insn 44 43 45 6 (debug_marker) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:3 -1
+     (nil))
+(insn 45 44 46 6 (set (reg:DI 107)
+        (reg/v/f:DI 91 [ p ])) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(insn 46 45 47 6 (set (reg:DI 108)
+        (reg/v/f:DI 102 [ buf ])) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(insn 47 46 48 6 (set (reg:DI 109)
+        (reg/v:DI 103 [ size ])) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(insn 48 47 49 6 (set (reg:DI 1 dx)
+        (reg:DI 109)) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(insn 49 48 50 6 (set (reg:DI 4 si)
+        (reg:DI 108)) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(insn 50 49 51 6 (set (reg:DI 5 di)
+        (reg:DI 107)) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(call_insn 51 50 52 6 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7fcdb7ff4000 __builtin_memcpy>) [0 __builtin_memcpy S1 A8])
+            (const_int 0 [0]))) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7fcdb7ff4000 __builtin_memcpy>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (set (reg:DI 0 ax)
+            (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 52 51 53 6 (set (reg:DI 110)
+        (reg:DI 0 ax)) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(insn 53 52 54 6 (set (reg:DI 111)
+        (reg:DI 110)) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(debug_insn 54 53 55 6 (var_location:DI __dest (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":53:10 -1
+     (nil))
+(debug_insn 55 54 56 6 (var_location:DI __src (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":53:10 -1
+     (nil))
+(debug_insn 56 55 57 6 (var_location:DI __len (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":53:10 -1
+     (nil))
+(debug_insn 57 56 58 6 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":54:4 -1
+     (nil))
+(insn 58 57 59 6 (parallel [
+            (set (mem:DI (plus:DI (reg/f:DI 101 [ this ])
+                        (const_int 48 [0x30])) [3 this_19(D)->head_received+0 S8 A64])
+                (plus:DI (mem:DI (plus:DI (reg/f:DI 101 [ this ])
+                            (const_int 48 [0x30])) [3 this_19(D)->head_received+0 S8 A64])
+                    (reg/v:DI 103 [ size ])))
+            (clobber (reg:CC 17 flags))
+        ]) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":54:24 -1
+     (nil))
+(debug_insn 59 58 6 6 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":55:4 -1
+     (nil))
+(insn 6 59 60 6 (set (reg:SI 100 [ <retval> ])
+        (const_int 0 [0])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":55:11 -1
+     (nil))
+(jump_insn 60 6 61 6 (set (pc)
+        (label_ref:DI 186)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":55:11 660 {jump}
+     (nil)
+ -> 186)
+(barrier 61 60 62)
+(code_label 62 61 63 7 7 (nil) [1 uses])
+(note 63 62 64 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 64 63 65 7 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":58:3 -1
+     (nil))
+(debug_insn 65 64 66 7 (var_location:DI __dest (reg/v/f:DI 91 [ p ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":58:3 -1
+     (nil))
+(debug_insn 66 65 67 7 (var_location:DI __src (reg/v/f:DI 102 [ buf ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":58:3 -1
+     (nil))
+(debug_insn 67 66 68 7 (var_location:DI __len (reg/v:DI 92 [ head_left ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":58:3 -1
+     (nil))
+(debug_insn 68 67 69 7 (debug_marker:BLK) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":31:1 -1
+     (nil))
+(debug_insn 69 68 70 7 (debug_marker) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:3 -1
+     (nil))
+(insn 70 69 71 7 (set (reg:SI 112)
+        (subreg:SI (reg/v:DI 92 [ head_left ]) 0)) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(insn 71 70 72 7 (set (reg/f:DI 113)
+        (reg/v/f:DI 91 [ p ])) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(insn 72 71 73 7 (set (reg/f:DI 114)
+        (reg/v/f:DI 102 [ buf ])) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(insn 73 72 74 7 (parallel [
+            (set (reg:SI 116)
+                (and:SI (reg:SI 112)
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 17 flags))
+        ]) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(insn 74 73 75 7 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg:SI 116)
+            (const_int 0 [0]))) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(jump_insn 75 74 194 7 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 87)
+            (pc))) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (int_list:REG_BR_PROB 107374188 (nil))
+ -> 87)
+(note 194 75 76 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 76 194 77 8 (set (reg:SI 115)
+        (const_int 0 [0])) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(code_label 77 76 195 9 9 (nil) [1 uses])
+(note 195 77 78 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 78 195 79 9 (set (reg:DI 117)
+        (zero_extend:DI (reg:SI 115))) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(insn 79 78 80 9 (set (reg:QI 118)
+        (mem:QI (plus:DI (reg/v/f:DI 102 [ buf ])
+                (reg:DI 117)) [0 MEM[(void *)buf_20(D)] S1 A8])) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(insn 80 79 81 9 (set (mem:QI (plus:DI (reg/v/f:DI 91 [ p ])
+                (reg:DI 117)) [0 MEM[(void *)p_22] S1 A8])
+        (reg:QI 118)) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(insn 81 80 82 9 (parallel [
+            (set (reg:SI 115)
+                (plus:SI (reg:SI 115)
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(insn 82 81 83 9 (set (reg:CC 17 flags)
+        (compare:CC (reg:SI 115)
+            (reg:SI 116))) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(jump_insn 83 82 196 9 (set (pc)
+        (if_then_else (ltu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 77)
+            (pc))) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (int_list:REG_BR_PROB 858993460 (nil))
+ -> 77)
+(note 196 83 84 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 84 196 85 10 (set (reg:DI 119)
+        (zero_extend:DI (reg:SI 115))) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(insn 85 84 86 10 (parallel [
+            (set (reg/f:DI 113)
+                (plus:DI (reg/f:DI 113)
+                    (reg:DI 119)))
+            (clobber (reg:CC 17 flags))
+        ]) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(insn 86 85 87 10 (parallel [
+            (set (reg/f:DI 114)
+                (plus:DI (reg/f:DI 114)
+                    (reg:DI 119)))
+            (clobber (reg:CC 17 flags))
+        ]) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(code_label 87 86 197 11 10 (nil) [1 uses])
+(note 197 87 88 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 88 197 89 11 (var_location:DI __dest (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":58:9 -1
+     (nil))
+(debug_insn 89 88 90 11 (var_location:DI __src (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":58:9 -1
+     (nil))
+(debug_insn 90 89 91 11 (var_location:DI __len (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":58:9 -1
+     (nil))
+(debug_insn 91 90 92 11 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":59:3 -1
+     (nil))
+(debug_insn 92 91 93 11 (var_location:DI D#12 (plus:DI (reg/v:DI 103 [ size ])
+        (const_int -4 [0xfffffffffffffffc]))) -1
+     (nil))
+(debug_insn 93 92 94 11 (var_location:DI size (plus:DI (reg:DI 82 [ _1 ])
+        (debug_expr:DI D#12))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":59:8 -1
+     (nil))
+(debug_insn 94 93 95 11 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":60:3 -1
+     (nil))
+(debug_insn 95 94 96 11 (var_location:DI buf (plus:DI (reg/v/f:DI 102 [ buf ])
+        (reg/v:DI 92 [ head_left ]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":60:7 -1
+     (nil))
+(debug_insn 96 95 97 11 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":62:3 -1
+     (nil))
+(debug_insn 97 96 98 11 (var_location:DI D#1 (plus:DI (reg/f:DI 101 [ this ])
+        (const_int 40 [0x28]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":62:5 -1
+     (nil))
+(debug_insn 98 97 99 11 (var_location:DI p (debug_expr:DI D#1)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":62:5 -1
+     (nil))
+(debug_insn 99 98 100 11 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":63:3 -1
+     (nil))
+(debug_insn 100 99 101 11 (var_location:SI __bsx (mem:SI (plus:DI (reg/f:DI 101 [ this ])
+            (const_int 40 [0x28])) [7 MEM[(uint32_t *)this_19(D) + 40B]+0 S4 A32])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":63:21 -1
+     (nil))
+(debug_insn 101 100 102 11 (debug_marker:BLK) "/usr/include/x86_64-linux-gnu/bits/byteswap.h":49:1 -1
+     (nil))
+(debug_insn 102 101 103 11 (debug_marker) "/usr/include/x86_64-linux-gnu/bits/byteswap.h":52:3 -1
+     (nil))
+(insn 103 102 104 11 (set (reg:SI 120)
+        (mem:SI (plus:DI (reg/f:DI 101 [ this ])
+                (const_int 40 [0x28])) [7 MEM[(uint32_t *)this_19(D) + 40B]+0 S4 A32])) "/usr/include/x86_64-linux-gnu/bits/byteswap.h":52:28 -1
+     (nil))
+(insn 104 103 105 11 (set (reg:SI 95 [ _37 ])
+        (bswap:SI (reg:SI 120))) "/usr/include/x86_64-linux-gnu/bits/byteswap.h":52:28 -1
+     (expr_list:REG_EQUAL (bswap:SI (mem:SI (plus:DI (reg/f:DI 101 [ this ])
+                    (const_int 40 [0x28])) [7 MEM[(uint32_t *)this_19(D) + 40B]+0 S4 A32]))
+        (nil)))
+(debug_insn 105 104 106 11 (var_location:SI __bsx (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":63:21 -1
+     (nil))
+(insn 106 105 107 11 (set (reg:DI 99 [ prephitmp_50 ])
+        (zero_extend:DI (reg:SI 95 [ _37 ]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":63:21 -1
+     (nil))
+(insn 107 106 108 11 (set (mem:DI (plus:DI (reg/f:DI 101 [ this ])
+                (const_int 72 [0x48])) [3 this_19(D)->body_size+0 S8 A64])
+        (reg:DI 99 [ prephitmp_50 ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":63:19 -1
+     (nil))
+(debug_insn 108 107 109 11 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":64:3 -1
+     (nil))
+(insn 109 108 110 11 (set (reg:CC 17 flags)
+        (compare:CC (reg:DI 99 [ prephitmp_50 ])
+            (mem:DI (plus:DI (reg/f:DI 101 [ this ])
+                    (const_int 32 [0x20])) [3 this_19(D)->D.21870.size_limit+0 S8 A64]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":64:3 -1
+     (nil))
+(jump_insn 110 109 111 11 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 119)
+            (pc))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":64:3 -1
+     (int_list:REG_BR_PROB 524845004 (nil))
+ -> 119)
+(note 111 110 112 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 112 111 113 12 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":66:4 -1
+     (nil))
+(call_insn/u 113 112 114 12 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x7fcdb76bd300 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":66:4 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x7fcdb76bd300 __errno_location>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (nil))
+(insn 114 113 115 12 (set (reg/f:DI 87 [ _7 ])
+        (reg:DI 0 ax)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":66:4 -1
+     (nil))
+(insn 115 114 116 12 (set (mem:SI (reg/f:DI 87 [ _7 ]) [7 *_7+0 S4 A32])
+        (const_int 90 [0x5a])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":66:10 -1
+     (nil))
+(debug_insn 116 115 7 12 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":67:4 -1
+     (nil))
+(insn 7 116 117 12 (set (reg:SI 100 [ <retval> ])
+        (const_int -1 [0xffffffffffffffff])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":67:12 -1
+     (nil))
+(jump_insn 117 7 118 12 (set (pc)
+        (label_ref:DI 186)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":67:12 660 {jump}
+     (nil)
+ -> 186)
+(barrier 118 117 119)
+(code_label 119 118 120 13 11 (nil) [1 uses])
+(note 120 119 121 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 121 120 122 13 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":70:3 -1
+     (nil))
+(insn 122 121 123 13 (set (reg:DI 5 di)
+        (reg:DI 99 [ prephitmp_50 ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":70:30 -1
+     (nil))
+(call_insn 123 122 124 13 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("malloc") [flags 0x41]  <function_decl 0x7fcdb8020500 malloc>) [0 __builtin_malloc S1 A8])
+            (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":70:30 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("malloc") [flags 0x41]  <function_decl 0x7fcdb8020500 malloc>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 124 123 125 13 (set (reg/f:DI 121)
+        (reg:DI 0 ax)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":70:30 -1
+     (expr_list:REG_NOALIAS (reg/f:DI 121)
+        (nil)))
+(insn 125 124 126 13 (set (reg/f:DI 88 [ _8 ])
+        (reg/f:DI 121)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":70:30 -1
+     (nil))
+(insn 126 125 127 13 (set (mem/f:DI (plus:DI (reg/f:DI 101 [ this ])
+                (const_int 56 [0x38])) [4 this_19(D)->body+0 S8 A64])
+        (reg/f:DI 88 [ _8 ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":70:14 -1
+     (nil))
+(debug_insn 127 126 128 13 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":71:3 -1
+     (nil))
+(insn 128 127 129 13 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:DI 88 [ _8 ])
+            (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":71:3 -1
+     (nil))
+(jump_insn 129 128 130 13 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 193)
+            (pc))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":71:3 659 {*jcc}
+     (int_list:REG_BR_PROB 429500 (nil))
+ -> 193)
+(note 130 129 131 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 131 130 132 14 (parallel [
+            (set (reg:DI 93 [ _26 ])
+                (plus:DI (reg/v:DI 103 [ size ])
+                    (const_int -4 [0xfffffffffffffffc])))
+            (clobber (reg:CC 17 flags))
+        ]) -1
+     (nil))
+(insn 132 131 133 14 (parallel [
+            (set (reg/v:DI 103 [ size ])
+                (plus:DI (reg:DI 82 [ _1 ])
+                    (reg:DI 93 [ _26 ])))
+            (clobber (reg:CC 17 flags))
+        ]) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":59:8 -1
+     (nil))
+(insn 133 132 134 14 (parallel [
+            (set (reg/v/f:DI 102 [ buf ])
+                (plus:DI (reg/v/f:DI 102 [ buf ])
+                    (reg/v:DI 92 [ head_left ])))
+            (clobber (reg:CC 17 flags))
+        ]) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":60:7 -1
+     (nil))
+(debug_insn 134 133 135 14 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":74:3 -1
+     (nil))
+(insn 135 134 136 14 (set (mem:DI (plus:DI (reg/f:DI 101 [ this ])
+                (const_int 64 [0x40])) [3 this_19(D)->body_received+0 S8 A64])
+        (const_int 0 [0])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":74:23 -1
+     (nil))
+(code_label 136 135 137 15 6 (nil) [1 uses])
+(note 137 136 138 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 138 137 139 15 (var_location:DI size (reg/v:DI 103 [ size ])) -1
+     (nil))
+(debug_insn 139 138 140 15 (var_location:DI buf (reg/v/f:DI 102 [ buf ])) -1
+     (nil))
+(debug_insn 140 139 141 15 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":77:2 -1
+     (nil))
+(debug_insn 141 140 142 15 (var_location:DI D#11 (mem:DI (plus:DI (reg/f:DI 101 [ this ])
+            (const_int 72 [0x48])) [3 this_19(D)->body_size+0 S8 A64])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":77:27 -1
+     (nil))
+(debug_insn 142 141 143 15 (var_location:DI D#10 (mem:DI (plus:DI (reg/f:DI 101 [ this ])
+            (const_int 64 [0x40])) [3 this_19(D)->body_received+0 S8 A64])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":77:45 -1
+     (nil))
+(debug_insn 143 142 144 15 (var_location:DI D#9 (minus:DI (debug_expr:DI D#11)
+        (debug_expr:DI D#10))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":77:9 -1
+     (nil))
+(debug_insn 144 143 145 15 (var_location:DI body_left (debug_expr:DI D#9)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":77:9 -1
+     (nil))
+(debug_insn 145 144 146 15 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":79:2 -1
+     (nil))
+(insn 146 145 147 15 (set (reg:CC 17 flags)
+        (compare:CC (reg/v:DI 103 [ size ])
+            (reg:DI 99 [ prephitmp_50 ]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":79:2 -1
+     (nil))
+(jump_insn 147 146 148 15 (set (pc)
+        (if_then_else (leu (reg:CC 17 flags)
+                (const_int 0 [0]))
+            (label_ref 156)
+            (pc))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":79:2 -1
+     (int_list:REG_BR_PROB 524845004 (nil))
+ -> 156)
+(note 148 147 149 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 149 148 150 16 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":81:3 -1
+     (nil))
+(call_insn/u 150 149 151 16 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x7fcdb76bd300 __errno_location>) [0 __errno_location S1 A8])
+            (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":81:3 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("__errno_location") [flags 0x41]  <function_decl 0x7fcdb76bd300 __errno_location>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (nil))
+(insn 151 150 152 16 (set (reg/f:DI 89 [ _11 ])
+        (reg:DI 0 ax)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":81:3 -1
+     (nil))
+(insn 152 151 153 16 (set (mem:SI (reg/f:DI 89 [ _11 ]) [7 *_11+0 S4 A32])
+        (const_int 74 [0x4a])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":81:9 -1
+     (nil))
+(debug_insn 153 152 8 16 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":82:3 -1
+     (nil))
+(insn 8 153 154 16 (set (reg:SI 100 [ <retval> ])
+        (const_int -1 [0xffffffffffffffff])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":82:11 -1
+     (nil))
+(jump_insn 154 8 155 16 (set (pc)
+        (label_ref:DI 186)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":82:11 660 {jump}
+     (nil)
+ -> 186)
+(barrier 155 154 156)
+(code_label 156 155 157 17 12 (nil) [1 uses])
+(note 157 156 158 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 158 157 159 17 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":85:2 -1
+     (nil))
+(debug_insn 159 158 160 17 (var_location:DI __dest (mem/f:DI (plus:DI (reg/f:DI 101 [ this ])
+            (const_int 56 [0x38])) [4 this_19(D)->body+0 S8 A64])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":85:15 -1
+     (nil))
+(debug_insn 160 159 161 17 (var_location:DI __src (reg/v/f:DI 102 [ buf ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":85:15 -1
+     (nil))
+(debug_insn 161 160 162 17 (var_location:DI __len (debug_expr:DI D#9)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":85:15 -1
+     (nil))
+(debug_insn 162 161 163 17 (debug_marker:BLK) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":31:1 -1
+     (nil))
+(debug_insn 163 162 164 17 (debug_marker) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:3 -1
+     (nil))
+(insn 164 163 165 17 (set (reg/f:DI 122)
+        (mem/f:DI (plus:DI (reg/f:DI 101 [ this ])
+                (const_int 56 [0x38])) [4 this_19(D)->body+0 S8 A64])) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(insn 165 164 166 17 (set (reg:DI 123)
+        (reg/f:DI 122)) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(insn 166 165 167 17 (set (reg:DI 124)
+        (reg/v/f:DI 102 [ buf ])) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(insn 167 166 168 17 (set (reg:DI 125)
+        (reg:DI 99 [ prephitmp_50 ])) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(insn 168 167 169 17 (set (reg:DI 1 dx)
+        (reg:DI 125)) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(insn 169 168 170 17 (set (reg:DI 4 si)
+        (reg:DI 124)) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(insn 170 169 171 17 (set (reg:DI 5 di)
+        (reg:DI 123)) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(call_insn 171 170 172 17 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7fcdb7ff4000 __builtin_memcpy>) [0 __builtin_memcpy S1 A8])
+            (const_int 0 [0]))) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7fcdb7ff4000 __builtin_memcpy>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (set (reg:DI 0 ax)
+            (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 172 171 173 17 (set (reg:DI 126)
+        (reg:DI 0 ax)) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(insn 173 172 174 17 (set (reg:DI 127)
+        (reg:DI 126)) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(debug_insn 174 173 175 17 (var_location:DI __dest (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":85:8 -1
+     (nil))
+(debug_insn 175 174 176 17 (var_location:DI __src (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":85:8 -1
+     (nil))
+(debug_insn 176 175 177 17 (var_location:DI __len (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":85:8 -1
+     (nil))
+(debug_insn 177 176 178 17 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":86:2 -1
+     (nil))
+(insn 178 177 179 17 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/v:DI 103 [ size ])
+            (reg:DI 99 [ prephitmp_50 ]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":86:2 -1
+     (nil))
+(insn 179 178 180 17 (set (reg:QI 129)
+        (eq:QI (reg:CCZ 17 flags)
+            (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":86:2 -1
+     (nil))
+(insn 180 179 181 17 (set (reg:SI 128)
+        (zero_extend:SI (reg:QI 129))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":86:2 -1
+     (nil))
+(insn 181 180 190 17 (set (reg:SI 100 [ <retval> ])
+        (reg:SI 128)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":55:11 -1
+     (nil))
+(jump_insn 190 181 191 17 (set (pc)
+        (label_ref:DI 186)) 660 {jump}
+     (nil)
+ -> 186)
+(barrier 191 190 193)
+(code_label 193 191 192 18 13 (nil) [1 uses])
+(note 192 193 9 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 9 192 186 18 (set (reg:SI 100 [ <retval> ])
+        (const_int -1 [0xffffffffffffffff])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":72:12 -1
+     (nil))
+(code_label 186 9 189 20 4 (nil) [4 uses])
+(note 189 186 187 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 187 189 188 20 (set (reg/i:SI 0 ax)
+        (reg:SI 100 [ <retval> ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":90:1 -1
+     (nil))
+(insn 188 187 0 20 (use (reg/i:SI 0 ax)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":90:1 -1
+     (nil))
+
+;; Function protocol::TutorialMessage::~TutorialMessage (_ZN8protocol15TutorialMessageD2Ev, funcdef_no=988, decl_uid=21867, cgraph_uid=995, symbol_order=994)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/f:DI 83 [ this ])
+        (reg:DI 5 di [ this ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":61:10 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":63:3 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:DI 84)
+        (mem/f:DI (plus:DI (reg/f:DI 83 [ this ])
+                (const_int 56 [0x38])) [4 this_3(D)->body+0 S8 A64])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":63:7 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DI 5 di)
+        (reg:DI 84)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":63:7 -1
+     (nil))
+(call_insn/j 9 8 10 2 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7fcdb8019500 free>) [0 __builtin_free S1 A8])
+        (const_int 0 [0])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":63:7 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7fcdb8019500 free>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(barrier 10 9 0)
+
+;; Function protocol::TutorialMessage::~TutorialMessage (_ZN8protocol15TutorialMessageD0Ev, funcdef_no=990, decl_uid=21861, cgraph_uid=997, symbol_order=996)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/f:DI 83 [ this ])
+        (reg:DI 5 di [ this ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":61:10 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (var_location:DI this (reg/f:DI 83 [ this ])) -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker:BLK) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":61:10 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":63:3 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 84)
+        (mem/f:DI (plus:DI (reg/f:DI 83 [ this ])
+                (const_int 56 [0x38])) [4 this_2(D)->body+0 S8 A64])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":63:7 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 5 di)
+        (reg:DI 84)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":63:7 -1
+     (nil))
+(call_insn 11 10 12 2 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7fcdb8019500 free>) [0 __builtin_free S1 A8])
+        (const_int 0 [0])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":63:7 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7fcdb8019500 free>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(debug_insn 12 11 13 2 (var_location:DI D#4 (reg/f:DI 83 [ this ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":62:2 -1
+     (nil))
+(debug_insn 13 12 14 2 (var_location:DI this (debug_expr:DI D#4)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":62:2 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker:BLK) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":34:7 -1
+     (nil))
+(debug_insn 15 14 16 2 (var_location:DI D#2 (plus:DI (debug_expr:DI D#4)
+        (const_int 8 [0x8]))) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":34:7 -1
+     (nil))
+(debug_insn 16 15 17 2 (var_location:DI this (debug_expr:DI D#2)) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":34:7 -1
+     (nil))
+(debug_insn 17 16 18 2 (debug_marker:BLK) "/home/zyh/workflow-master/_include/workflow/Communicator.h":114:10 -1
+     (nil))
+(debug_insn 18 17 19 2 (var_location:DI this (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":34:7 -1
+     (nil))
+(debug_insn 19 18 20 2 (var_location:DI D#3 (debug_expr:DI D#4)) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":34:7 -1
+     (nil))
+(debug_insn 20 19 21 2 (var_location:DI this (debug_expr:DI D#3)) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":34:7 -1
+     (nil))
+(debug_insn 21 20 22 2 (debug_marker:BLK) "/home/zyh/workflow-master/_include/workflow/Communicator.h":97:10 -1
+     (nil))
+(debug_insn 22 21 23 2 (var_location:DI this (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":34:7 -1
+     (nil))
+(debug_insn 23 22 24 2 (var_location:DI this (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":62:2 -1
+     (nil))
+(debug_insn 24 23 25 2 (var_location:DI this (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":64:2 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:DI 5 di)
+        (reg/f:DI 83 [ this ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":64:2 -1
+     (nil))
+(call_insn/j 26 25 27 2 (call (mem:QI (symbol_ref:DI ("_ZdlPv") [flags 0x41]  <function_decl 0x7fcdb8079400 operator delete>) [0 operator delete S1 A8])
+        (const_int 0 [0])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":64:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("_ZdlPv") [flags 0x41]  <function_decl 0x7fcdb8079400 operator delete>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(barrier 27 26 0)
+
+;; Function protocol::TutorialMessage::_ZThn8_N8protocol15TutorialMessageD1Ev (_ZThn8_N8protocol15TutorialMessageD1Ev, funcdef_no=998, decl_uid=21882, cgraph_uid=999, symbol_order=998)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/f:DI 83 [ this ])
+        (reg:DI 5 di [ this ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":61:10 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (var_location:DI D#13 (plus:DI (reg/f:DI 83 [ this ])
+        (const_int -8 [0xfffffffffffffff8]))) -1
+     (nil))
+(debug_insn 7 6 8 2 (var_location:DI this (debug_expr:DI D#13)) -1
+     (nil))
+(debug_insn 8 7 9 2 (var_location:DI this (debug_expr:DI D#13)) -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":63:3 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 84)
+        (mem/f:DI (plus:DI (reg/f:DI 83 [ this ])
+                (const_int 48 [0x30])) [4 MEM[(struct TutorialMessage *)this_1(D) + -8B].body+0 S8 A64])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":63:7 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 5 di)
+        (reg:DI 84)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":63:7 -1
+     (nil))
+(call_insn/j 12 11 13 2 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7fcdb8019500 free>) [0 __builtin_free S1 A8])
+        (const_int 0 [0])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":63:7 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7fcdb8019500 free>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(barrier 13 12 0)
+
+;; Function protocol::TutorialMessage::_ZThn8_N8protocol15TutorialMessageD0Ev (_ZThn8_N8protocol15TutorialMessageD0Ev, funcdef_no=999, decl_uid=21883, cgraph_uid=1001, symbol_order=1000)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/f:DI 84 [ this ])
+        (reg:DI 5 di [ this ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":61:10 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (var_location:DI this (plus:DI (reg/f:DI 84 [ this ])
+        (const_int -8 [0xfffffffffffffff8]))) -1
+     (nil))
+(debug_insn 7 6 8 2 (var_location:DI this (plus:DI (reg/f:DI 84 [ this ])
+        (const_int -8 [0xfffffffffffffff8]))) -1
+     (nil))
+(debug_insn 8 7 9 2 (var_location:DI this (plus:DI (reg/f:DI 84 [ this ])
+        (const_int -8 [0xfffffffffffffff8]))) -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":63:3 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:DI 85)
+        (mem/f:DI (plus:DI (reg/f:DI 84 [ this ])
+                (const_int 48 [0x30])) [4 MEM[(struct TutorialMessage *)this_1(D) + -8B].body+0 S8 A64])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":63:7 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 5 di)
+        (reg:DI 85)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":63:7 -1
+     (nil))
+(call_insn 12 11 13 2 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7fcdb8019500 free>) [0 __builtin_free S1 A8])
+        (const_int 0 [0])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":63:7 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7fcdb8019500 free>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(debug_insn 13 12 14 2 (var_location:DI D#4 (plus:DI (reg/f:DI 84 [ this ])
+        (const_int -8 [0xfffffffffffffff8]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":62:2 -1
+     (nil))
+(debug_insn 14 13 15 2 (var_location:DI this (debug_expr:DI D#4)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":62:2 -1
+     (nil))
+(debug_insn 15 14 16 2 (var_location:DI D#2 (plus:DI (debug_expr:DI D#4)
+        (const_int 8 [0x8]))) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":34:7 -1
+     (nil))
+(debug_insn 16 15 17 2 (var_location:DI this (debug_expr:DI D#2)) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":34:7 -1
+     (nil))
+(debug_insn 17 16 18 2 (var_location:DI this (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":34:7 -1
+     (nil))
+(debug_insn 18 17 19 2 (var_location:DI D#3 (debug_expr:DI D#4)) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":34:7 -1
+     (nil))
+(debug_insn 19 18 20 2 (var_location:DI this (debug_expr:DI D#3)) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":34:7 -1
+     (nil))
+(debug_insn 20 19 21 2 (var_location:DI this (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":34:7 -1
+     (nil))
+(debug_insn 21 20 22 2 (var_location:DI this (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":62:2 -1
+     (nil))
+(debug_insn 22 21 23 2 (var_location:DI this (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":64:2 -1
+     (nil))
+(insn 23 22 24 2 (parallel [
+            (set (reg:DI 86 [ this ])
+                (plus:DI (reg/f:DI 84 [ this ])
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":64:2 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:DI 5 di)
+        (reg:DI 86 [ this ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":64:2 -1
+     (nil))
+(call_insn/j 25 24 26 2 (call (mem:QI (symbol_ref:DI ("_ZdlPv") [flags 0x41]  <function_decl 0x7fcdb8079400 operator delete>) [0 operator delete S1 A8])
+        (const_int 0 [0])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.h":64:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("_ZdlPv") [flags 0x41]  <function_decl 0x7fcdb8079400 operator delete>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(barrier 26 25 0)
+
+;; Function protocol::ProtocolMessage::_ZThn8_N8protocol15ProtocolMessage6appendEPKvPm (_ZThn8_N8protocol15ProtocolMessage6appendEPKvPm, funcdef_no=1000, decl_uid=21719, cgraph_uid=969, symbol_order=968)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (reg/f:DI 87 [ this ])
+        (reg:DI 5 di [ this ])) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":47:14 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:DI 88 [ buf ])
+        (reg:DI 4 si [ buf ])) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":47:14 -1
+     (nil))
+(insn 4 3 5 2 (set (reg/v/f:DI 89 [ size ])
+        (reg:DI 1 dx [ size ])) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":47:14 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(insn 8 5 9 2 (parallel [
+            (set (reg/f:DI 82 [ this ])
+                (plus:DI (reg/f:DI 87 [ this ])
+                    (const_int -8 [0xfffffffffffffff8])))
+            (clobber (reg:CC 17 flags))
+        ]) -1
+     (nil))
+(debug_insn 9 8 10 2 (var_location:DI this (reg/f:DI 82 [ this ])) -1
+     (nil))
+(debug_insn 10 9 11 2 (var_location:DI this (reg/f:DI 82 [ this ])) -1
+     (nil))
+(debug_insn 11 10 12 2 (var_location:DI buf (reg/v/f:DI 88 [ buf ])) -1
+     (nil))
+(debug_insn 12 11 13 2 (var_location:DI size (reg/v/f:DI 89 [ size ])) -1
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":49:3 -1
+     (nil))
+(insn 14 13 15 2 (set (reg/f:DI 90)
+        (mem/f:DI (plus:DI (reg/f:DI 87 [ this ])
+                (const_int -8 [0xfffffffffffffff8])) [8 MEM[(struct ProtocolMessage *)this_1(D) + -8B].D.21707._vptr.CommMessageOut+0 S8 A64])) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":49:33 -1
+     (nil))
+(insn 15 14 16 2 (set (reg/f:DI 91)
+        (mem/f:DI (plus:DI (reg/f:DI 90)
+                (const_int 32 [0x20])) [9 MEM[(int (*) () *)_9 + 32B]+0 S8 A64])) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":49:22 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:DI 1 dx)
+        (mem:DI (reg/v/f:DI 89 [ size ]) [3 *size_6(D)+0 S8 A64])) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":49:22 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:DI 4 si)
+        (reg/v/f:DI 88 [ buf ])) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":49:22 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:DI 5 di)
+        (reg/f:DI 82 [ this ])) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":49:22 -1
+     (nil))
+(call_insn/j 19 18 20 2 (set (reg:SI 0 ax)
+        (call (mem:QI (reg/f:DI 91) [0 *OBJ_TYPE_REF(_10;(struct ProtocolMessage)this_2->4) S1 A8])
+            (const_int 0 [0]))) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":49:22 -1
+     (expr_list:REG_CALL_DECL (nil)
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(barrier 20 19 0)
+
+;; Function protocol::TutorialMessage::set_message_body (_ZN8protocol15TutorialMessage16set_message_bodyEPKvm, funcdef_no=993, decl_uid=21811, cgraph_uid=1004, symbol_order=1003)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+Selected stringop expansion strategy: libcall
+
+;; Generating RTL for gimple basic block 4
+Edge 2->4 redirected to 7
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Redirecting jump 59 from 6 to 7.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+Removing jump 53.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 8 NOTE_INSN_DELETED)
+(note 8 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 8 3 2 (set (reg/f:DI 85 [ this ])
+        (reg:DI 5 di [ this ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":93:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:DI 86 [ body ])
+        (reg:DI 4 si [ body ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":93:1 -1
+     (nil))
+(insn 4 3 5 2 (set (reg/v:DI 87 [ size ])
+        (reg:DI 1 dx [ size ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":93:1 -1
+     (nil))
+(note 5 4 10 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 10 5 11 2 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":94:2 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 5 di)
+        (reg/v:DI 87 [ size ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":94:18 -1
+     (nil))
+(call_insn 12 11 13 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("malloc") [flags 0x41]  <function_decl 0x7fcdb8020500 malloc>) [0 __builtin_malloc S1 A8])
+            (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":94:18 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("malloc") [flags 0x41]  <function_decl 0x7fcdb8020500 malloc>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 13 12 14 2 (set (reg/f:DI 88)
+        (reg:DI 0 ax)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":94:18 -1
+     (expr_list:REG_NOALIAS (reg/f:DI 88)
+        (nil)))
+(insn 14 13 15 2 (set (reg/v/f:DI 83 [ p ])
+        (reg/f:DI 88)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":94:18 -1
+     (nil))
+(debug_insn 15 14 16 2 (var_location:DI p (reg/v/f:DI 83 [ p ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":94:18 -1
+     (nil))
+(debug_insn 16 15 17 2 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":96:2 -1
+     (nil))
+(insn 17 16 18 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/v/f:DI 83 [ p ])
+            (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":96:2 -1
+     (nil))
+(jump_insn 18 17 19 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 62)
+            (pc))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":96:2 659 {*jcc}
+     (int_list:REG_BR_PROB 429500 (nil))
+ -> 62)
+(note 19 18 20 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 20 19 21 4 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":99:2 -1
+     (nil))
+(debug_insn 21 20 22 4 (var_location:DI __dest (reg/v/f:DI 83 [ p ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":99:2 -1
+     (nil))
+(debug_insn 22 21 23 4 (var_location:DI __src (reg/v/f:DI 86 [ body ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":99:2 -1
+     (nil))
+(debug_insn 23 22 24 4 (var_location:DI __len (reg/v:DI 87 [ size ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":99:2 -1
+     (nil))
+(debug_insn 24 23 25 4 (debug_marker:BLK) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":31:1 -1
+     (nil))
+(debug_insn 25 24 26 4 (debug_marker) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:3 -1
+     (nil))
+(insn 26 25 27 4 (set (reg:DI 89)
+        (reg/v/f:DI 83 [ p ])) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(insn 27 26 28 4 (set (reg:DI 90)
+        (reg/v/f:DI 86 [ body ])) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(insn 28 27 29 4 (set (reg:DI 91)
+        (reg/v:DI 87 [ size ])) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(insn 29 28 30 4 (set (reg:DI 1 dx)
+        (reg:DI 91)) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(insn 30 29 31 4 (set (reg:DI 4 si)
+        (reg:DI 90)) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(insn 31 30 32 4 (set (reg:DI 5 di)
+        (reg:DI 89)) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(call_insn 32 31 33 4 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7fcdb7ff4000 __builtin_memcpy>) [0 __builtin_memcpy S1 A8])
+            (const_int 0 [0]))) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("memcpy") [flags 0x41]  <function_decl 0x7fcdb7ff4000 __builtin_memcpy>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (set (reg:DI 0 ax)
+            (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 5 di))
+            (expr_list:DI (use (reg:DI 4 si))
+                (expr_list:DI (use (reg:DI 1 dx))
+                    (nil))))))
+(insn 33 32 34 4 (set (reg:DI 92)
+        (reg:DI 0 ax)) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(insn 34 33 35 4 (set (reg:DI 93)
+        (reg:DI 92)) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(debug_insn 35 34 36 4 (var_location:DI __dest (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":99:8 -1
+     (nil))
+(debug_insn 36 35 37 4 (var_location:DI __src (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":99:8 -1
+     (nil))
+(debug_insn 37 36 38 4 (var_location:DI __len (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":99:8 -1
+     (nil))
+(debug_insn 38 37 39 4 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":100:2 -1
+     (nil))
+(insn 39 38 40 4 (set (reg:DI 94)
+        (mem/f:DI (plus:DI (reg/f:DI 85 [ this ])
+                (const_int 56 [0x38])) [4 this_9(D)->body+0 S8 A64])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":100:6 -1
+     (nil))
+(insn 40 39 41 4 (set (reg:DI 5 di)
+        (reg:DI 94)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":100:6 -1
+     (nil))
+(call_insn 41 40 42 4 (call (mem:QI (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7fcdb8019500 free>) [0 __builtin_free S1 A8])
+        (const_int 0 [0])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":100:6 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("free") [flags 0x41]  <function_decl 0x7fcdb8019500 free>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(debug_insn 42 41 43 4 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":101:2 -1
+     (nil))
+(insn 43 42 44 4 (set (mem/f:DI (plus:DI (reg/f:DI 85 [ this ])
+                (const_int 56 [0x38])) [4 this_9(D)->body+0 S8 A64])
+        (reg/v/f:DI 83 [ p ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":101:13 -1
+     (nil))
+(debug_insn 44 43 45 4 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":102:2 -1
+     (nil))
+(insn 45 44 46 4 (set (mem:DI (plus:DI (reg/f:DI 85 [ this ])
+                (const_int 72 [0x48])) [3 this_9(D)->body_size+0 S8 A64])
+        (reg/v:DI 87 [ size ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":102:18 -1
+     (nil))
+(debug_insn 46 45 47 4 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":104:2 -1
+     (nil))
+(insn 47 46 48 4 (set (mem:DI (plus:DI (reg/f:DI 85 [ this ])
+                (const_int 48 [0x30])) [3 this_9(D)->head_received+0 S8 A64])
+        (const_int 4 [0x4])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":104:22 -1
+     (nil))
+(debug_insn 48 47 49 4 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":105:2 -1
+     (nil))
+(insn 49 48 50 4 (set (mem:DI (plus:DI (reg/f:DI 85 [ this ])
+                (const_int 64 [0x40])) [3 this_9(D)->body_received+0 S8 A64])
+        (reg/v:DI 87 [ size ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":105:22 -1
+     (nil))
+(debug_insn 50 49 6 4 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":106:2 -1
+     (nil))
+(insn 6 50 59 4 (set (reg:SI 84 [ <retval> ])
+        (const_int 0 [0])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":106:9 -1
+     (nil))
+(jump_insn 59 6 60 4 (set (pc)
+        (label_ref:DI 55)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":106:9 660 {jump}
+     (nil)
+ -> 55)
+(barrier 60 59 62)
+(code_label 62 60 61 5 26 (nil) [1 uses])
+(note 61 62 7 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 7 61 55 5 (set (reg:SI 84 [ <retval> ])
+        (const_int -1 [0xffffffffffffffff])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":97:11 -1
+     (nil))
+(code_label 55 7 58 7 24 (nil) [1 uses])
+(note 58 55 56 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 56 58 57 7 (set (reg/i:SI 0 ax)
+        (reg:SI 84 [ <retval> ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":107:1 -1
+     (nil))
+(insn 57 56 0 7 (use (reg/i:SI 0 ax)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":107:1 -1
+     (nil))
+
+;; Function protocol::TutorialMessage::TutorialMessage (_ZN8protocol15TutorialMessageC2EOS0_, funcdef_no=995, decl_uid=21854, cgraph_uid=1006, symbol_order=1005)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/f:DI 89 [ this ])
+        (reg:DI 5 di [ this ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":109:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:DI 90 [ msg ])
+        (reg:DI 4 si [ msg ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":109:1 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 4 8 2 (var_location:DI D#7 (reg/f:DI 89 [ this ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":109:55 -1
+     (nil))
+(debug_insn 8 7 9 2 (var_location:DI this (debug_expr:DI D#7)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":109:55 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker:BLK) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":68:2 -1
+     (nil))
+(debug_insn 10 9 11 2 (var_location:DI D#5 (debug_expr:DI D#7)) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":68:20 -1
+     (nil))
+(debug_insn 11 10 12 2 (var_location:DI this (debug_expr:DI D#5)) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":68:20 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker:BLK) "/home/zyh/workflow-master/_include/workflow/Communicator.h":91:7 -1
+     (nil))
+(debug_insn 13 12 14 2 (var_location:DI this (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":68:20 -1
+     (nil))
+(debug_insn 14 13 15 2 (var_location:DI D#6 (plus:DI (debug_expr:DI D#7)
+        (const_int 8 [0x8]))) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":68:20 -1
+     (nil))
+(debug_insn 15 14 16 2 (var_location:DI this (debug_expr:DI D#6)) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":68:20 -1
+     (nil))
+(debug_insn 16 15 17 2 (debug_marker:BLK) "/home/zyh/workflow-master/_include/workflow/Communicator.h":101:7 -1
+     (nil))
+(debug_insn 17 16 18 2 (var_location:DI this (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":68:20 -1
+     (nil))
+(debug_insn 18 17 19 2 (debug_marker) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":68:22 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:DI 91)
+        (const_int -1 [0xffffffffffffffff])) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":68:39 -1
+     (nil))
+(insn 20 19 21 2 (set (mem:DI (plus:DI (reg/f:DI 89 [ this ])
+                (const_int 32 [0x20])) [3 MEM[(struct ProtocolMessage *)this_10(D)].size_limit+0 S8 A64])
+        (reg:DI 91)) "/home/zyh/workflow-master/_include/workflow/ProtocolMessage.h":68:39 -1
+     (nil))
+(debug_insn 21 20 22 2 (var_location:DI this (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":109:55 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:DI 93)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref/i:DI ("_ZTVN8protocol15TutorialMessageE")  <var_decl 0x7fcdb6c08e10 _ZTVN8protocol15TutorialMessageE>)
+                    ] UNSPEC_GOTPCREL)) [13  S8 A8])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":109:55 -1
+     (nil))
+(insn 23 22 24 2 (set (reg/f:DI 92)
+        (plus:DI (reg:DI 93)
+            (const_int 16 [0x10]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":109:55 -1
+     (expr_list:REG_EQUAL (const:DI (plus:DI (symbol_ref/i:DI ("_ZTVN8protocol15TutorialMessageE")  <var_decl 0x7fcdb6c08e10 _ZTVN8protocol15TutorialMessageE>)
+                (const_int 16 [0x10])))
+        (nil)))
+(insn 24 23 25 2 (set (mem/f:DI (reg/f:DI 89 [ this ]) [8 *this_10(D).D.21870.D.21707._vptr.CommMessageOut+0 S8 A64])
+        (reg/f:DI 92)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":109:55 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:DI 95)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref/i:DI ("_ZTVN8protocol15TutorialMessageE")  <var_decl 0x7fcdb6c08e10 _ZTVN8protocol15TutorialMessageE>)
+                    ] UNSPEC_GOTPCREL)) [13  S8 A8])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":109:55 -1
+     (nil))
+(insn 26 25 27 2 (set (reg/f:DI 94)
+        (plus:DI (reg:DI 95)
+            (const_int 72 [0x48]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":109:55 -1
+     (expr_list:REG_EQUAL (const:DI (plus:DI (symbol_ref/i:DI ("_ZTVN8protocol15TutorialMessageE")  <var_decl 0x7fcdb6c08e10 _ZTVN8protocol15TutorialMessageE>)
+                (const_int 72 [0x48])))
+        (nil)))
+(insn 27 26 28 2 (set (mem/f:DI (plus:DI (reg/f:DI 89 [ this ])
+                (const_int 8 [0x8])) [8 *this_10(D).D.21870.D.21708._vptr.CommMessageIn+0 S8 A64])
+        (reg/f:DI 94)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":109:55 -1
+     (nil))
+(debug_insn 28 27 29 2 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":111:2 -1
+     (nil))
+(insn 29 28 30 2 (set (reg:DI 96)
+        (mem:DI (plus:DI (reg/v/f:DI 90 [ msg ])
+                (const_int 32 [0x20])) [3 *msg_14(D).D.21870.size_limit+0 S8 A64])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":111:19 -1
+     (nil))
+(insn 30 29 31 2 (set (mem:DI (plus:DI (reg/f:DI 89 [ this ])
+                (const_int 32 [0x20])) [3 *this_10(D).D.21870.size_limit+0 S8 A64])
+        (reg:DI 96)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":111:19 -1
+     (nil))
+(debug_insn 31 30 32 2 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":112:2 -1
+     (nil))
+(insn 32 31 33 2 (set (reg:DI 97)
+        (const_int -1 [0xffffffffffffffff])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":112:17 -1
+     (nil))
+(insn 33 32 34 2 (set (mem:DI (plus:DI (reg/v/f:DI 90 [ msg ])
+                (const_int 32 [0x20])) [3 *msg_14(D).D.21870.size_limit+0 S8 A64])
+        (reg:DI 97)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":112:17 -1
+     (nil))
+(debug_insn 34 33 35 2 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":114:2 -1
+     (nil))
+(debug_insn 35 34 36 2 (var_location:DI D#15 (plus:DI (reg/v/f:DI 90 [ msg ])
+        (const_int 40 [0x28]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":114:25 -1
+     (nil))
+(debug_insn 36 35 37 2 (var_location:DI D#16 (plus:DI (reg/f:DI 89 [ this ])
+        (const_int 40 [0x28]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":114:15 -1
+     (nil))
+(debug_insn 37 36 38 2 (var_location:DI __dest (debug_expr:DI D#16)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":114:15 -1
+     (nil))
+(debug_insn 38 37 39 2 (var_location:DI __src (debug_expr:DI D#15)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":114:15 -1
+     (nil))
+(debug_insn 39 38 40 2 (var_location:DI __len (const_int 4 [0x4])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":114:15 -1
+     (nil))
+(debug_insn 40 39 41 2 (debug_marker:BLK) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":31:1 -1
+     (nil))
+(debug_insn 41 40 42 2 (debug_marker) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:3 -1
+     (nil))
+(insn 42 41 43 2 (set (reg:SI 98)
+        (mem:SI (plus:DI (reg/v/f:DI 90 [ msg ])
+                (const_int 40 [0x28])) [0 MEM[(char * {ref-all})msg_14(D) + 40B]+0 S4 A8])) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(insn 43 42 44 2 (set (mem:SI (plus:DI (reg/f:DI 89 [ this ])
+                (const_int 40 [0x28])) [0 MEM[(char * {ref-all})this_10(D) + 40B]+0 S4 A8])
+        (reg:SI 98)) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(debug_insn 44 43 45 2 (var_location:DI __dest (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":114:8 -1
+     (nil))
+(debug_insn 45 44 46 2 (var_location:DI __src (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":114:8 -1
+     (nil))
+(debug_insn 46 45 47 2 (var_location:DI __len (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":114:8 -1
+     (nil))
+(debug_insn 47 46 48 2 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":115:2 -1
+     (nil))
+(insn 48 47 49 2 (set (reg:DI 99)
+        (mem:DI (plus:DI (reg/v/f:DI 90 [ msg ])
+                (const_int 48 [0x30])) [3 *msg_14(D).head_received+0 S8 A64])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":115:22 -1
+     (nil))
+(insn 49 48 50 2 (set (mem:DI (plus:DI (reg/f:DI 89 [ this ])
+                (const_int 48 [0x30])) [3 *this_10(D).head_received+0 S8 A64])
+        (reg:DI 99)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":115:22 -1
+     (nil))
+(debug_insn 50 49 51 2 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":116:2 -1
+     (nil))
+(insn 51 50 52 2 (set (reg/f:DI 100)
+        (mem/f:DI (plus:DI (reg/v/f:DI 90 [ msg ])
+                (const_int 56 [0x38])) [4 *msg_14(D).body+0 S8 A64])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":116:13 -1
+     (nil))
+(insn 52 51 53 2 (set (mem/f:DI (plus:DI (reg/f:DI 89 [ this ])
+                (const_int 56 [0x38])) [4 *this_10(D).body+0 S8 A64])
+        (reg/f:DI 100)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":116:13 -1
+     (nil))
+(debug_insn 53 52 54 2 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":117:2 -1
+     (nil))
+(insn 54 53 55 2 (set (reg:DI 101)
+        (mem:DI (plus:DI (reg/v/f:DI 90 [ msg ])
+                (const_int 64 [0x40])) [3 *msg_14(D).body_received+0 S8 A64])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":117:22 -1
+     (nil))
+(insn 55 54 56 2 (set (mem:DI (plus:DI (reg/f:DI 89 [ this ])
+                (const_int 64 [0x40])) [3 *this_10(D).body_received+0 S8 A64])
+        (reg:DI 101)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":117:22 -1
+     (nil))
+(debug_insn 56 55 57 2 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":118:2 -1
+     (nil))
+(insn 57 56 58 2 (set (reg:DI 102)
+        (mem:DI (plus:DI (reg/v/f:DI 90 [ msg ])
+                (const_int 72 [0x48])) [3 *msg_14(D).body_size+0 S8 A64])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":118:18 -1
+     (nil))
+(insn 58 57 59 2 (set (mem:DI (plus:DI (reg/f:DI 89 [ this ])
+                (const_int 72 [0x48])) [3 *this_10(D).body_size+0 S8 A64])
+        (reg:DI 102)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":118:18 -1
+     (nil))
+(debug_insn 59 58 60 2 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":120:2 -1
+     (nil))
+(insn 60 59 61 2 (set (mem:DI (plus:DI (reg/v/f:DI 90 [ msg ])
+                (const_int 48 [0x30])) [3 *msg_14(D).head_received+0 S8 A64])
+        (const_int 0 [0])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":120:20 -1
+     (nil))
+(debug_insn 61 60 62 2 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":121:2 -1
+     (nil))
+(insn 62 61 63 2 (set (mem/f:DI (plus:DI (reg/v/f:DI 90 [ msg ])
+                (const_int 56 [0x38])) [4 *msg_14(D).body+0 S8 A64])
+        (const_int 0 [0])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":121:11 -1
+     (nil))
+(debug_insn 63 62 64 2 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":122:2 -1
+     (nil))
+(insn 64 63 0 2 (set (mem:DI (plus:DI (reg/v/f:DI 90 [ msg ])
+                (const_int 72 [0x48])) [3 *msg_14(D).body_size+0 S8 A64])
+        (const_int 0 [0])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":122:16 -1
+     (nil))
+
+;; Function protocol::TutorialMessage::operator= (_ZN8protocol15TutorialMessageaSEOS0_, funcdef_no=997, decl_uid=21846, cgraph_uid=1008, symbol_order=1007)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 52.
+Merging block 6 into block 5...
+Merged blocks 5 and 6.
+Merged 5 and 6 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/f:DI 89 [ this ])
+        (reg:DI 5 di [ this ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":126:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:DI 90 [ msg ])
+        (reg:DI 4 si [ msg ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":126:1 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 4 8 2 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":127:2 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/v/f:DI 90 [ msg ])
+            (reg/f:DI 89 [ this ]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":127:2 -1
+     (nil))
+(jump_insn 9 8 10 2 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 48)
+            (pc))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":127:2 -1
+     (int_list:REG_BR_PROB 499612076 (nil))
+ -> 48)
+(note 10 9 11 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 11 10 12 4 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":129:3 -1
+     (nil))
+(insn 12 11 13 4 (set (reg:DI 82 [ _1 ])
+        (mem:DI (plus:DI (reg/v/f:DI 90 [ msg ])
+                (const_int 32 [0x20])) [3 msg_9(D)->D.21870.size_limit+0 S8 A64])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":129:26 -1
+     (nil))
+(insn 13 12 14 4 (set (mem:DI (plus:DI (reg/f:DI 89 [ this ])
+                (const_int 32 [0x20])) [3 this_10(D)->D.21870.size_limit+0 S8 A64])
+        (reg:DI 82 [ _1 ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":129:20 -1
+     (nil))
+(debug_insn 14 13 15 4 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":130:3 -1
+     (nil))
+(insn 15 14 16 4 (set (reg:DI 91)
+        (const_int -1 [0xffffffffffffffff])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":130:18 -1
+     (nil))
+(insn 16 15 17 4 (set (mem:DI (plus:DI (reg/v/f:DI 90 [ msg ])
+                (const_int 32 [0x20])) [3 msg_9(D)->D.21870.size_limit+0 S8 A64])
+        (reg:DI 91)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":130:18 -1
+     (nil))
+(debug_insn 17 16 18 4 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":132:3 -1
+     (nil))
+(debug_insn 18 17 19 4 (var_location:DI D#17 (plus:DI (reg/v/f:DI 90 [ msg ])
+        (const_int 40 [0x28]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":132:26 -1
+     (nil))
+(debug_insn 19 18 20 4 (var_location:DI D#18 (plus:DI (reg/f:DI 89 [ this ])
+        (const_int 40 [0x28]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":132:16 -1
+     (nil))
+(debug_insn 20 19 21 4 (var_location:DI __dest (debug_expr:DI D#18)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":132:16 -1
+     (nil))
+(debug_insn 21 20 22 4 (var_location:DI __src (debug_expr:DI D#17)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":132:16 -1
+     (nil))
+(debug_insn 22 21 23 4 (var_location:DI __len (const_int 4 [0x4])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":132:16 -1
+     (nil))
+(debug_insn 23 22 24 4 (debug_marker:BLK) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":31:1 -1
+     (nil))
+(debug_insn 24 23 25 4 (debug_marker) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:3 -1
+     (nil))
+(insn 25 24 26 4 (set (reg:SI 87 [ _23 ])
+        (mem:SI (plus:DI (reg/v/f:DI 90 [ msg ])
+                (const_int 40 [0x28])) [0 MEM[(char * {ref-all})msg_9(D) + 40B]+0 S4 A8])) -1
+     (nil))
+(insn 26 25 27 4 (set (mem:SI (plus:DI (reg/f:DI 89 [ this ])
+                (const_int 40 [0x28])) [0 MEM[(char * {ref-all})this_10(D) + 40B]+0 S4 A8])
+        (reg:SI 87 [ _23 ])) "/usr/include/x86_64-linux-gnu/bits/string_fortified.h":34:33 -1
+     (nil))
+(debug_insn 27 26 28 4 (var_location:DI __dest (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":132:9 -1
+     (nil))
+(debug_insn 28 27 29 4 (var_location:DI __src (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":132:9 -1
+     (nil))
+(debug_insn 29 28 30 4 (var_location:DI __len (clobber (const_int 0 [0]))) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":132:9 -1
+     (nil))
+(debug_insn 30 29 31 4 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":133:3 -1
+     (nil))
+(insn 31 30 32 4 (set (reg:DI 83 [ _4 ])
+        (mem:DI (plus:DI (reg/v/f:DI 90 [ msg ])
+                (const_int 48 [0x30])) [3 msg_9(D)->head_received+0 S8 A64])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":133:29 -1
+     (nil))
+(insn 32 31 33 4 (set (mem:DI (plus:DI (reg/f:DI 89 [ this ])
+                (const_int 48 [0x30])) [3 this_10(D)->head_received+0 S8 A64])
+        (reg:DI 83 [ _4 ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":133:23 -1
+     (nil))
+(debug_insn 33 32 34 4 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":134:3 -1
+     (nil))
+(insn 34 33 35 4 (set (reg/f:DI 84 [ _5 ])
+        (mem/f:DI (plus:DI (reg/v/f:DI 90 [ msg ])
+                (const_int 56 [0x38])) [4 msg_9(D)->body+0 S8 A64])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":134:20 -1
+     (nil))
+(insn 35 34 36 4 (set (mem/f:DI (plus:DI (reg/f:DI 89 [ this ])
+                (const_int 56 [0x38])) [4 this_10(D)->body+0 S8 A64])
+        (reg/f:DI 84 [ _5 ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":134:14 -1
+     (nil))
+(debug_insn 36 35 37 4 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":135:3 -1
+     (nil))
+(insn 37 36 38 4 (set (reg:DI 85 [ _6 ])
+        (mem:DI (plus:DI (reg/v/f:DI 90 [ msg ])
+                (const_int 64 [0x40])) [3 msg_9(D)->body_received+0 S8 A64])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":135:29 -1
+     (nil))
+(insn 38 37 39 4 (set (mem:DI (plus:DI (reg/f:DI 89 [ this ])
+                (const_int 64 [0x40])) [3 this_10(D)->body_received+0 S8 A64])
+        (reg:DI 85 [ _6 ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":135:23 -1
+     (nil))
+(debug_insn 39 38 40 4 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":136:3 -1
+     (nil))
+(insn 40 39 41 4 (set (reg:DI 86 [ _7 ])
+        (mem:DI (plus:DI (reg/v/f:DI 90 [ msg ])
+                (const_int 72 [0x48])) [3 msg_9(D)->body_size+0 S8 A64])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":136:25 -1
+     (nil))
+(insn 41 40 42 4 (set (mem:DI (plus:DI (reg/f:DI 89 [ this ])
+                (const_int 72 [0x48])) [3 this_10(D)->body_size+0 S8 A64])
+        (reg:DI 86 [ _7 ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":136:19 -1
+     (nil))
+(debug_insn 42 41 43 4 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":138:3 -1
+     (nil))
+(insn 43 42 44 4 (set (mem:DI (plus:DI (reg/v/f:DI 90 [ msg ])
+                (const_int 48 [0x30])) [3 msg_9(D)->head_received+0 S8 A64])
+        (const_int 0 [0])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":138:21 -1
+     (nil))
+(debug_insn 44 43 45 4 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":139:3 -1
+     (nil))
+(insn 45 44 46 4 (set (mem/f:DI (plus:DI (reg/v/f:DI 90 [ msg ])
+                (const_int 56 [0x38])) [4 msg_9(D)->body+0 S8 A64])
+        (const_int 0 [0])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":139:12 -1
+     (nil))
+(debug_insn 46 45 47 4 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":140:3 -1
+     (nil))
+(insn 47 46 48 4 (set (mem:DI (plus:DI (reg/v/f:DI 90 [ msg ])
+                (const_int 72 [0x48])) [3 msg_9(D)->body_size+0 S8 A64])
+        (const_int 0 [0])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":140:17 -1
+     (nil))
+(code_label 48 47 49 5 30 (nil) [1 uses])
+(note 49 48 50 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 50 49 51 5 (debug_marker) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":143:2 -1
+     (nil))
+(insn 51 50 55 5 (set (reg/f:DI 88 [ <retval> ])
+        (reg/f:DI 89 [ this ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":143:10 -1
+     (nil))
+(insn 55 51 56 5 (set (reg/i:DI 0 ax)
+        (reg/f:DI 88 [ <retval> ])) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":144:1 -1
+     (nil))
+(insn 56 55 0 5 (use (reg/i:DI 0 ax)) "/home/zyh/workflow-master/tutorial/tutorial-10-user_defined_protocol/message.cc":144:1 -1
+     (nil))

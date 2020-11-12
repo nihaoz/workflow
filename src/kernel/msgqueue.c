@@ -85,6 +85,7 @@ static size_t __msgqueue_swap(msgqueue_t *queue)
 
 void msgqueue_put(void *msg, msgqueue_t *queue)
 {
+	//将消息量转化为步长为1的长度然后加上 消息的偏移地址
 	void **link = (void **)((char *)msg + queue->linkoff);
 
 	*link = NULL;
@@ -119,9 +120,14 @@ void *msgqueue_get(msgqueue_t *queue)
 	return msg;
 }
 
+/**
+ * @description:消息队列的创建 
+ * @param {maxlen:最大消息量，linkoff 偏移地址}
+ * @return {*}
+ */
 msgqueue_t *msgqueue_create(size_t maxlen, int linkoff)
 {
-	msgqueue_t *queue = (msgqueue_t *)malloc(sizeof (msgqueue_t));
+	msgqueue_t *queue = (msgqueue_t *)malloc(sizeof(msgqueue_t));
 	int ret;
 
 	if (!queue)
@@ -139,14 +145,14 @@ msgqueue_t *msgqueue_create(size_t maxlen, int linkoff)
 				ret = pthread_cond_init(&queue->put_cond, NULL);
 				if (ret == 0)
 				{
-					queue->msg_max = maxlen;
+					queue->msg_max = maxlen;	//消息的最大数为4096
 					queue->linkoff = linkoff;
 					queue->head1 = NULL;
 					queue->head2 = NULL;
-					queue->get_head = &queue->head1;
-					queue->put_head = &queue->head2;
-					queue->put_tail = &queue->head2;
-					queue->msg_cnt = 0;
+					queue->get_head = &queue->head1;//消息获取头
+					queue->put_head = &queue->head2;//消息头加入部分
+					queue->put_tail = &queue->head2;//消息头结尾
+					queue->msg_cnt = 0;//消息数量
 					queue->nonblock = 0;
 					return queue;
 				}
@@ -173,4 +179,3 @@ void msgqueue_destroy(msgqueue_t *queue)
 	pthread_mutex_destroy(&queue->get_mutex);
 	free(queue);
 }
-

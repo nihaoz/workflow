@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/redis_cli.dir/tutorial-02-redis_cli.cc.o"
-  "../redis_cli.pdb"
   "../redis_cli"
+  "../redis_cli.pdb"
+  "CMakeFiles/redis_cli.dir/tutorial-02-redis_cli.cc.o"
 )
 
 # Per-language clean rules from dependency scanning.

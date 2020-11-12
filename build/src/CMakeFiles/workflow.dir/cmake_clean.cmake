@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "../../_lib/libworkflow.pdb"
   "../../_lib/libworkflow.a"
+  "../../_lib/libworkflow.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/manager.dir/DNSCache.cc.o"
-  "CMakeFiles/manager.dir/UpstreamManager.cc.o"
   "CMakeFiles/manager.dir/RouteManager.cc.o"
+  "CMakeFiles/manager.dir/UpstreamManager.cc.o"
   "CMakeFiles/manager.dir/WFGlobal.cc.o"
 )
 

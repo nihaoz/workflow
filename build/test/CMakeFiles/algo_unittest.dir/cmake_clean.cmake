@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/algo_unittest.dir/algo_unittest.cc.o"
-  "algo_unittest.pdb"
   "algo_unittest"
+  "algo_unittest.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

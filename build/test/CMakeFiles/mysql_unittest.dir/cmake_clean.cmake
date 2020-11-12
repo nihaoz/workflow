@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/mysql_unittest.dir/mysql_unittest.cc.o"
-  "mysql_unittest.pdb"
   "mysql_unittest"
+  "mysql_unittest.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

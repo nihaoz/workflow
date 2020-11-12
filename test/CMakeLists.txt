@@ -47,6 +47,7 @@ endif ()
 
 message("-----------------LIBRT:${LIBRT}------------------")
 message("-----------------WORKFLOW_LIB:${WORKFLOW_LIB}------------------")
+message("-----------------src:${src}------------------")
 
 foreach(src ${TEST_LIST})
 	add_executable(${src} EXCLUDE_FROM_ALL ${src}.cc)

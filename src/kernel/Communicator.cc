@@ -1343,6 +1343,7 @@ int Communicator::create_poller(size_t poller_threads)
 		.context			=	this
 	};
 
+	//创建一个消息队列
 	this->queue = msgqueue_create(4096, sizeof (struct poller_result));
 	if (this->queue)
 	{
@@ -1360,6 +1361,8 @@ int Communicator::create_poller(size_t poller_threads)
 
 	return -1;
 }
+
+
 //调度表初始化
 int Communicator::init(size_t poller_threads, size_t handler_threads)
 {

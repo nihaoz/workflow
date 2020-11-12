@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/mysql_cli.dir/tutorial-12-mysql_cli.cc.o"
-  "../mysql_cli.pdb"
   "../mysql_cli"
+  "../mysql_cli.pdb"
+  "CMakeFiles/mysql_cli.dir/tutorial-12-mysql_cli.cc.o"
 )
 
 # Per-language clean rules from dependency scanning.

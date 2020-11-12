@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/matrix_multiply.dir/tutorial-08-matrix_multiply.cc.o"
-  "../matrix_multiply.pdb"
   "../matrix_multiply"
+  "../matrix_multiply.pdb"
+  "CMakeFiles/matrix_multiply.dir/tutorial-08-matrix_multiply.cc.o"
 )
 
 # Per-language clean rules from dependency scanning.

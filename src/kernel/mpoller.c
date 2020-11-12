@@ -42,6 +42,11 @@ static int __mpoller_create(const struct poller_params *params,
 	return -1;
 }
 
+/**
+ * @description: 轮询器建立
+ * @param {*}
+ * @return {*}
+ */
 mpoller_t *mpoller_create(const struct poller_params *params, size_t nthreads)
 {
 	mpoller_t *mpoller;

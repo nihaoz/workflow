@@ -108,6 +108,7 @@ private:
 	friend class CommSchedTarget;
 };
 
+//通用调度器
 class CommScheduler
 {
 public:
